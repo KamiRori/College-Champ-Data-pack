@@ -22,8 +22,8 @@ execute if score team1wins db_game matches 3 if score eventmode tourney_stats ma
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 4 run title @a title ["",{"text":"黄队获胜！","color":"yellow","bold":true}]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 5 run title @a title ["",{"text":"青队获胜！","color":"dark_aqua","bold":true}]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 6 run title @a title ["",{"text":"橙队获胜！","color":"gold","bold":true}]
-execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 7 run title @a title ["",{"text":"紫队获胜！","color":"dark_purple","bold":true}]
-execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 8 run title @a title ["",{"text":"粉队获胜！","color":"light_purple","bold":true}]
+execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 8 run title @a title ["",{"text":"紫队获胜！","color":"dark_purple","bold":true}]
+execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 0 if score TeamOne db_teams matches 7 run title @a title ["",{"text":"粉队获胜！","color":"light_purple","bold":true}]
 
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 1 run title @a subtitle [""]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 2 run title @a subtitle [""]
@@ -31,8 +31,8 @@ execute if score team1wins db_game matches 3 if score eventmode tourney_stats ma
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 4 run title @a subtitle [""]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 5 run title @a subtitle [""]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 6 run title @a subtitle [""]
-execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 7 run title @a subtitle [""]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 8 run title @a subtitle [""]
+execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 7 run title @a subtitle [""]
 
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 1 run title @a title ["",{"text":"红队","color":"red","bold":true},"赢得了本届高校联赛！"]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 2 run title @a title ["",{"text":"蓝队","color":"blue","bold":true},"赢得了本届高校联赛！"]
@@ -40,8 +40,8 @@ execute if score team1wins db_game matches 3 if score eventmode tourney_stats ma
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 4 run title @a title ["",{"text":"黄队","color":"yellow","bold":true},"赢得了本届高校联赛！"]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 5 run title @a title ["",{"text":"青队","color":"dark_aqua","bold":true},"赢得了本届高校联赛！"]
 execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 6 run title @a title ["",{"text":"橙队","color":"gold","bold":true},"赢得了本届高校联赛！"]
-execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 7 run title @a title ["",{"text":"紫队","color":"dark_purple","bold":true},"赢得了本届高校联赛！"]
-execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 8 run title @a title ["",{"text":"粉队","color":"light_purple","bold":true},"赢得了本届高校联赛！"]
+execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 8 run title @a title ["",{"text":"紫队","color":"dark_purple","bold":true},"赢得了本届高校联赛！"]
+execute if score team1wins db_game matches 3 if score eventmode tourney_stats matches 1 if score TeamOne db_teams matches 7 run title @a title ["",{"text":"粉队","color":"light_purple","bold":true},"赢得了本届高校联赛！"]
 
 execute if score team1wins db_game matches 3 run tag @a[tag=db_teamone] add eventwinner
 

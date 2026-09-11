@@ -2,6 +2,9 @@
 
 # Open Gates
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_cyananchor] at @s run summon area_effect_cloud ~ ~10 ~15 {Duration:9999999,Tags:["gr_opener"]}
+# Teleports away(kill) the Warden if applicable
+
+# Reapply Night Vision
 
 
 # Playsound
@@ -17,9 +20,10 @@ scoreboard players add 4 gr_indvroom 1
 function gr:scoreboard/moveup/cyan
 scoreboard players operation cyan gr_currentpos = 4 gr_indvroom
 function gr:scoreboard/calc
+team modify cyan friendlyFire false
 # Announce position
-tellraw @a[team=!cyan] ["",{"translate":"team.cyan"},"§7第",{"score":{"name": "4","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§2Bawk Jungle","§e]"]
-tellraw @a[team=cyan] ["","§7你","§7第",{"score":{"name": "4","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§2Bawk Jungle","§e]"]
+tellraw @a[team=!cyan] ["",{"translate":"team.cyan"},"§7第",{"score":{"name": "4","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§5Pork Pond","§e]"]
+tellraw @a[team=cyan] ["","§7你","§7第",{"score":{"name": "4","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§5Pork Pond","§e]"]
 # Initiate next room
 scoreboard players add cyan gr_teamphase 1
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_cyananchor] at @s run tp @s ~-47 ~ ~

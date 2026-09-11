@@ -18,6 +18,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run su
 
 kill @e[type=armor_stand,tag=gr_purple,tag=divider]
 execute as @a[team=purple] at @s run spawnpoint
+execute as @a[team=purple] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add purple gr_teamphase 1
 

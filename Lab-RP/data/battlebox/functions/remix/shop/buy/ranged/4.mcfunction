@@ -1,7 +1,7 @@
 
 execute if score @s bb_shop_coins < arrow_poison bb_shop_price run tellraw @s ["§c购买失败！资金不足。"," §f(",{"score":{"name": "arrow_poison","objective": "bb_shop_price"},"color": "gold"},"§6g§f)"]
 
-execute if score @s bb_shop_coins >= arrow_poison bb_shop_price run give @s tipped_arrow{Potion:"poison"} 
+execute if score @s bb_shop_coins >= arrow_poison bb_shop_price run give @s tipped_arrow{Potion:"poison"}
 
 execute if score @s bb_shop_coins >= arrow_poison bb_shop_price if entity @s[team=red] run tellraw @a[team=red] ["",{"selector":"@s"},"§7购买了","§e剧毒之箭"," §f(",{"score":{"name": "arrow_poison","objective": "bb_shop_price"},"color": "gold"},"§6g§f)"] 
 execute if score @s bb_shop_coins >= arrow_poison bb_shop_price if entity @s[team=blue] run tellraw @a[team=blue] ["",{"selector":"@s"},"§7购买了","§e剧毒之箭"," §f(",{"score":{"name": "arrow_poison","objective": "bb_shop_price"},"color": "gold"},"§6g§f)"] 

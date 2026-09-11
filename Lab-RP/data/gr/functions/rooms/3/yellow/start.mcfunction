@@ -1,42 +1,37 @@
 
 # 开启和关闭门
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run fill ~38 ~10 ~14 ~38 ~14 ~16 barrier
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run fill ~38 ~10 ~2 ~38 ~14 ~4 barrier
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run fill ~38 ~10 ~10 ~38 ~14 ~12 barrier
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run fill ~38 ~10 ~18 ~38 ~14 ~20 barrier
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run fill ~38 ~10 ~26 ~38 ~14 ~28 barrier
 ## Summon general aecs
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~38 ~14 ~15 {Duration:9999999,Tags:["gr_closer"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~38 ~14 ~3 {Duration:9999999,Tags:["gr_closer"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~38 ~14 ~11 {Duration:9999999,Tags:["gr_closer"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~38 ~14 ~19 {Duration:9999999,Tags:["gr_closer"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~38 ~14 ~27 {Duration:9999999,Tags:["gr_closer"]}
 
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~32 ~10 ~15 {Duration:9999999,Tags:["gr_opener"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~32 ~10 ~3 {Duration:9999999,Tags:["gr_opener"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~32 ~10 ~11 {Duration:9999999,Tags:["gr_opener"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~32 ~10 ~19 {Duration:9999999,Tags:["gr_opener"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon area_effect_cloud ~32 ~10 ~27 {Duration:9999999,Tags:["gr_opener"]}
 # Clear divider holograms
 
 kill @e[type=armor_stand,tag=gr_yellow,tag=divider]
 execute as @a[team=yellow] at @s run spawnpoint
+execute as @a[team=yellow] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add yellow gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_yellowsb "§a§l当前房间: §rIce and Fire"
+scoreboard players display name var_room_name gr_yellowsb "§a§l当前房间: §rArt Gallery"
 # Play sound and title
 execute as @a[team=yellow] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=yellow] times 20 40 20
 title @a[team=yellow] subtitle ""
-title @a[team=yellow] title "§e击败全部怪物！"
+title @a[team=yellow] title "§e复制图案！"
 # Give items
 clear @a[team=yellow]
-give @a[team=yellow] diamond_shovel{Unbreakable:1b,CanDestroy:[snow_block,snow]}
-
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~11 101 ~3
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~6 101 ~6
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~2 104 ~7
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~7 102 ~12
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~7 102 ~15
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~7 102 ~19
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~2 104 ~23
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~7 101 ~26
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~11 101 ~29
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run summon blaze ~10 102 ~22
-
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run execute as @e[type=blaze,tag=!grroom] run data modify entity @s Health set value 10f
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run tag @e[type=blaze,tag=!grroom] add yellow
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run tag @e[type=blaze,tag=!grroom] add grroom
+give @a[team=yellow] iron_pickaxe{CanDestroy:[diamond_block,emerald_block,gold_block,lapis_block,waxed_oxidized_cut_copper],Unbreakable:1b} 1
 
 # 开始计时
 scoreboard players set yellow gr_currenttime 0

@@ -9,5 +9,5 @@ scoreboard players operation cyan gr_currentmin /= 6000 math
 scoreboard players operation cyan gr_currentsec /= 100 math
 scoreboard players operation cyan gr_currentsec %= 60 math
 # 显示房间目标和当前用时
-execute if score cyan gr_currentsec matches 0..9 run title @a[team=cyan] actionbar ["",{"score":{"name": "cyan","objective": "gr_currentmin"}},":","0",{"score":{"name": "cyan","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击败全部怪物。"]
-execute if score cyan gr_currentsec matches 10..59 run title @a[team=cyan] actionbar ["",{"score":{"name": "cyan","objective": "gr_currentmin"}},":","",{"score":{"name": "cyan","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击败全部怪物。"]
+execute if score cyan gr_currentsec matches 0..9 run title @a[team=cyan] actionbar ["",{"score":{"name": "cyan","objective": "gr_currentmin"}},":","0",{"score":{"name": "cyan","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击碎所有陶罐。"]
+execute if score cyan gr_currentsec matches 10..59 run title @a[team=cyan] actionbar ["",{"score":{"name": "cyan","objective": "gr_currentmin"}},":","",{"score":{"name": "cyan","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击碎所有陶罐。"]

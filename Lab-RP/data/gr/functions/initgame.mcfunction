@@ -62,6 +62,10 @@ scoreboard players set pink gr_roomtoenter 1
 scoreboard players set orange gr_roomtoenter 1
 scoreboard players set purple gr_roomtoenter 1
 
+# 房间部分功能CD
+scoreboard objectives remove gr_globalcd
+scoreboard objectives add gr_globalcd dummy
+
 # 创建存储空间，用于更新数据
 forceload add 15000 15000
 kill @e[type=area_effect_cloud,tag=gr_posstorage]

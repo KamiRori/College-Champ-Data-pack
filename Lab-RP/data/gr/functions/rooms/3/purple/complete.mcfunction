@@ -2,7 +2,8 @@
 
 # Open Gates
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon area_effect_cloud ~ ~10 ~15 {Duration:9999999,Tags:["gr_opener"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run fill ~14 101 ~16 ~14 101 ~14 air
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run fill ~5 101 ~2 ~5 104 ~28 air replace cobblestone_wall
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run fill ~5 101 ~2 ~5 104 ~28 air replace smooth_stone_slab
 
 # Playsound
 execute as @a[team=purple] at @s run playsound gr.roomcomplete record @s
@@ -19,8 +20,8 @@ scoreboard players operation purple gr_currentpos = 3 gr_indvroom
 function gr:scoreboard/calc
 
 # Announce position
-tellraw @a[team=!purple] ["",{"translate":"team.purple"},"§7第",{"score":{"name": "3","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§bIce and Fire","§e]"]
-tellraw @a[team=purple] ["","§7你","§7第",{"score":{"name": "3","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§bIce and Fire","§e]"]
+tellraw @a[team=!purple] ["",{"translate":"team.purple"},"§7第",{"score":{"name": "3","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§dArt Gallery","§e]"]
+tellraw @a[team=purple] ["","§7你","§7第",{"score":{"name": "3","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§dArt Gallery","§e]"]
 # Initiate next room
 scoreboard players add purple gr_teamphase 1
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run tp @s ~-47 ~ ~

@@ -24,6 +24,7 @@ execute as @a at @s run playsound music.gameendmusic record @s
 
 kill @e[type=boat]
 clear @a
+tag @a remove ar_finishcourse_stay
 
 # Remove the Leader Lines
 scoreboard players reset $ar_sb_l4 ar_sb
@@ -70,3 +71,6 @@ execute if score eventmode tourney_stats matches 0 run team modify placeholder_6
 execute if score eventmode tourney_stats matches 1 run function master:timer/backtohub/80s
 
 tellraw @a[tag=_transcript] ["  §bTranscript >> §f§6Event State: §7ACE_RACE_IN_GAME§f -> GAME_ENDS"," §7[",{"score":{"name": "hour","objective": "_transcript"},"color": "gray"},"§7:",{"score":{"name": "minute_padding","objective": "_transcript"},"color": "gray"},{"score":{"name": "minute","objective": "_transcript"},"color": "gray"},"§7:",{"score":{"name": "second_padding","objective": "_transcript"},"color": "gray"},{"score":{"name": "second","objective": "_transcript"},"color": "gray"},"§7]"]
+
+# Rocket Launcher
+scoreboard players set gameflag rsr_game 0

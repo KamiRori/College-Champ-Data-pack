@@ -12,6 +12,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run summo
 
 kill @e[type=armor_stand,tag=gr_red,tag=divider]
 execute as @a[team=red] at @s run spawnpoint
+execute as @a[team=red] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add red gr_teamphase 1
 

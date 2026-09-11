@@ -9,5 +9,5 @@ scoreboard players operation orange gr_currentmin /= 6000 math
 scoreboard players operation orange gr_currentsec /= 100 math
 scoreboard players operation orange gr_currentsec %= 60 math
 # 显示房间目标和当前用时
-execute if score orange gr_currentsec matches 0..9 run title @a[team=orange] actionbar ["",{"score":{"name": "orange","objective": "gr_currentmin"}},":","0",{"score":{"name": "orange","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击败全部怪物。"]
-execute if score orange gr_currentsec matches 10..59 run title @a[team=orange] actionbar ["",{"score":{"name": "orange","objective": "gr_currentmin"}},":","",{"score":{"name": "orange","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击败全部怪物。"]
+execute if score orange gr_currentsec matches 0..9 run title @a[team=orange] actionbar ["",{"score":{"name": "orange","objective": "gr_currentmin"}},":","0",{"score":{"name": "orange","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击碎所有陶罐。"]
+execute if score orange gr_currentsec matches 10..59 run title @a[team=orange] actionbar ["",{"score":{"name": "orange","objective": "gr_currentmin"}},":","",{"score":{"name": "orange","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击碎所有陶罐。"]

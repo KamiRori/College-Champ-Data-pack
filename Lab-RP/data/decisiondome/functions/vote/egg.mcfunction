@@ -1,5 +1,5 @@
 
-execute as @e[type=egg,tag=!voteegg,nbt={Item:{tag:{vote:1}}}] at @s run function decisiondome:vote/findegg 
+execute as @e[type=egg,tag=!voteegg,nbt={Item:{tag:{vote:1}}}] at @s run function decisiondome:vote/findegg
 
 # Egg Dupe while remix is inactive
 execute if score remix_mode tourney_stats matches 0 as @e[type=area_effect_cloud,tag=voteaec,tag=!extra_chicken_rolled] store result score @s dd_egg_dupe run random value 1..1000

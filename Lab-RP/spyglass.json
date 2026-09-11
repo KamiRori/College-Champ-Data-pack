@@ -1,5 +1,20 @@
 {
     "env": {
-       "gameVersion": "1.20.4"
-    }
- }
+      "dependencies": [
+         "file:///C:/Users/chris/Desktop/.minecraft/versions/1.20.4-Fabric/resourcepacks/Championship_Pack_Project/"
+      ],
+      "permissionLevel": 3,
+      "gameVersion": "1.20.4"     
+    },
+
+
+	"lint": {
+		"undeclaredSymbol": [[
+      "hint",
+      "0"
+    ]
+		]
+	}
+    
+
+}

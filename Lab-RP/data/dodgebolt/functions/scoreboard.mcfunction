@@ -3,7 +3,7 @@ scoreboard objectives setdisplay list
 scoreboard objectives setdisplay sidebar db_sb
 scoreboard objectives modify db_sb numberformat fixed " "
 
-execute if score eventmode tourney_stats matches 1 run scoreboard objectives modify db_sb displayname ["",{"text": "高校小游戏联赛 新人活动","bold": true,"color": "yellow"}]
+execute if score eventmode tourney_stats matches 1 run scoreboard objectives modify db_sb displayname ["",{"text": "高校小游戏联赛 15","bold": true,"color": "yellow"}]
 execute if score eventmode tourney_stats matches 0 run scoreboard objectives modify db_sb displayname ["",{"text": "Dodgebolt","bold": true,"color": "yellow"}]
 execute if score mega_mode db_game matches 1 run scoreboard objectives modify db_sb displayname ["",{"text": "高校联赛: Megabolt","bold": true,"color": "yellow"}]
 scoreboard players set §0 db_sb 0

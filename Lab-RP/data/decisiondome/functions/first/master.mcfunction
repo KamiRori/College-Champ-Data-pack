@@ -20,11 +20,16 @@ scoreboard players set 14 dd_games 0
 scoreboard players set 15 dd_games 0
 scoreboard players set 16 dd_games 0
 scoreboard players set 17 dd_games 0
+scoreboard players set 18 dd_games 0
 
 #function decisiondome:setpad
 function decisiondome:first/initdome
 function decisiondome:emptydome
 function decisiondome:column/contract
+
+# SWITCH TO FATES PLATE
+execute if score fatesplate_anim tourney_stats matches 1 run function decisiondome:switch_anim/init
+execute if score fatesplate_anim tourney_stats matches 1 run return 0
 
 # Intro Part
 function decisiondome:first/1

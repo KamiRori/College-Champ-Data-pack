@@ -3,6 +3,7 @@
 # Open Gates
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run summon area_effect_cloud ~ ~10 ~15 {Duration:9999999,Tags:["gr_opener"]}
 
+
 # Playsound
 execute as @a[team=red] at @s run playsound gr.roomcomplete record @s
 
@@ -16,10 +17,9 @@ scoreboard players add 5 gr_indvroom 1
 function gr:scoreboard/moveup/red
 scoreboard players operation red gr_currentpos = 5 gr_indvroom
 function gr:scoreboard/calc
-
 # Announce position
-tellraw @a[team=!red] ["",{"translate":"team.red"},"§7第",{"score":{"name": "5","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§6The Crawl Maze","§e]"]
-tellraw @a[team=red] ["","§7你","§7第",{"score":{"name": "5","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§6The Crawl Maze","§e]"]
+tellraw @a[team=!red] ["",{"translate":"team.red"},"§7第",{"score":{"name": "5","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§7Ravager's Temple","§e]"]
+tellraw @a[team=red] ["","§7你","§7第",{"score":{"name": "5","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§7Ravager's Temple","§e]"]
 # Initiate next room
 scoreboard players add red gr_teamphase 1
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run tp @s ~-47 ~ ~

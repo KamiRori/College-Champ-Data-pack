@@ -9,11 +9,12 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run summo
 
 kill @e[type=armor_stand,tag=gr_red,tag=divider]
 execute as @a[team=red] at @s run spawnpoint
+execute as @a[team=red] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add red gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_redsb "§a§l当前房间: §rConveyors"
+scoreboard players display name var_room_name gr_redsb "§a§l当前房间: §rWipeout"
 # Play sound and title
 execute as @a[team=red] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=red] times 20 40 20

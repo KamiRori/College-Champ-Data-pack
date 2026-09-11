@@ -13,8 +13,8 @@ execute if score gamecount tourney_stats matches 7 run scoreboard players set mu
 
 
 execute if score gamecount tourney_stats matches 1 run schedule function decisiondome:multiboard/1_5 70t
-execute if score gamecount tourney_stats matches 3 run schedule function decisiondome:multiboard/2_0 70t 
-execute if score gamecount tourney_stats matches 5 run schedule function decisiondome:multiboard/2_5 70t 
+execute if score gamecount tourney_stats matches 3 run schedule function decisiondome:multiboard/2_0 70t
+execute if score gamecount tourney_stats matches 5 run schedule function decisiondome:multiboard/2_5 70t
 execute if score gamecount tourney_stats matches 7 run schedule function decisiondome:multiboard/3_0 70t
 
 execute if score gamecount tourney_stats matches 1 run tellraw @a ["",{"text": "游戏倍率会在游戏结算时计入各队积分中，且不参与个人积分的计算。","bold": true,"color":"yellow"}]

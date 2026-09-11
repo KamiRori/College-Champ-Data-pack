@@ -9,5 +9,5 @@ scoreboard players operation blue gr_currentmin /= 6000 math
 scoreboard players operation blue gr_currentsec /= 100 math
 scoreboard players operation blue gr_currentsec %= 60 math
 # 显示房间目标和当前用时
-execute if score blue gr_currentsec matches 0..9 run title @a[team=blue] actionbar ["",{"score":{"name": "blue","objective": "gr_currentmin"}},":","0",{"score":{"name": "blue","objective": "gr_currentsec"}}," | ","[§e!§r]"," 射击全部标靶。"]
-execute if score blue gr_currentsec matches 10..59 run title @a[team=blue] actionbar ["",{"score":{"name": "blue","objective": "gr_currentmin"}},":","",{"score":{"name": "blue","objective": "gr_currentsec"}}," | ","[§e!§r]"," 射击全部标靶。"]
+execute if score blue gr_currentsec matches 0..9 run title @a[team=blue] actionbar ["",{"score":{"name": "blue","objective": "gr_currentmin"}},":","0",{"score":{"name": "blue","objective": "gr_currentsec"}}," | ","[§e!§r]"," 点亮全部红石灯。"]
+execute if score blue gr_currentsec matches 10..59 run title @a[team=blue] actionbar ["",{"score":{"name": "blue","objective": "gr_currentmin"}},":","",{"score":{"name": "blue","objective": "gr_currentsec"}}," | ","[§e!§r]"," 点亮全部红石灯。"]

@@ -1,0 +1,2 @@
+
+summon text_display ~ ~1.25 ~0.249 {Tags:[maze_text_display,t_rescue_instru],billboard:"fixed",alignment:"center",Rotation:[180f,0f],see_through:false,shadow:false,text:'"§3§l营救挑战\\n§f现在你§c被困于§f你所启动挑战的房间，\\n你需要在规定时间内召唤一名队友\\n到你刚刚所在的房间按下§d按钮§f\\n以将你救出，并§a完成挑战§f。\\n你的队友将收到指向你所在房间的§b粒子提示§f。\\n\\n§7§o失败条件: 超时或生命值清零"',line_width:350}

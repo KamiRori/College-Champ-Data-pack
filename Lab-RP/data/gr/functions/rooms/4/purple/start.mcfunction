@@ -9,41 +9,31 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run su
 
 kill @e[type=armor_stand,tag=gr_purple,tag=divider]
 execute as @a[team=purple] at @s run spawnpoint
+execute as @a[team=purple] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add purple gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_purplesb "§a§l当前房间: §rBawk Jungle"
+scoreboard players display name var_room_name gr_purplesb "§a§l当前房间: §rPork Pond"
 # Play sound and title
 execute as @a[team=purple] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=purple] times 20 40 20
 title @a[team=purple] subtitle ""
-title @a[team=purple] title "§e击败所有动物！"
+title @a[team=purple] title "§e抓到所有猪！"
 # Give items
 clear @a[team=purple]
-give @a[team=purple] iron_sword{Unbreakable:1b}
+give @a[team=purple] fishing_rod{Unbreakable:1b}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon pig ~16 100 ~15 {active_effects:[{id:"minecraft:slow_falling",duration:40}],PersistenceRequired:true,Tags:["gr_rooms","purple"]}
 
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~4 101 ~3 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~5 101 ~14 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~10 100 ~24 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~19 101 ~28 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~27 101 ~22 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~28 101 ~12 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~22 102 ~10 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~17 103 ~15 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~16 103 ~12 {Tags:["purple","grroom"]}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~21 101 ~1 {Tags:["purple","grroom"]}
-
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~27 107 ~18 {Tags:["purple","grroom"],NoAI:1b}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~21 107 ~22 {Tags:["purple","grroom"],NoAI:1b}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~15 109.5 ~13 {Tags:["purple","grroom"],NoAI:1b}
-
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~11 109 ~4 {Tags:["purple","grroom"],NoAI:1b}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~21 114 ~5 {Tags:["purple","grroom"],NoAI:1b}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~24 117 ~10 {Tags:["purple","grroom"],NoAI:1b}
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~13 116 ~15 {Tags:["purple","grroom"],NoAI:1b}
-
-execute as @e[type=minecraft:area_effect_cloud,tag=gr_purpleanchor] at @s run summon chicken ~26 107 ~18 {Tags:["purple","grroom"],NoAI:1b}
 # 开始计时
 scoreboard players set purple gr_currenttime 0
 function gr:rooms/4/purple/time

@@ -9,24 +9,21 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_yellowanchor] at @s run su
 
 kill @e[type=armor_stand,tag=gr_yellow,tag=divider]
 execute as @a[team=yellow] at @s run spawnpoint
+execute as @a[team=yellow] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add yellow gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_yellowsb "§a§l当前房间: §rDig Site"
+scoreboard players display name var_room_name gr_yellowsb "§a§l当前房间: §rCreeper Guide"
 # Play sound and title
 execute as @a[team=yellow] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=yellow] times 20 40 20
 title @a[team=yellow] subtitle ""
-title @a[team=yellow] title "§e合成装备！"
+title @a[team=yellow] title "§e引导苦力怕！"
 # Give items
 clear @a[team=yellow]
-give @a[team=yellow] diamond_pickaxe{Unbreakable:1b,CanDestroy:[ancient_debris,diamond_ore,coal_ore,deepslate_gold_ore,dirt,coarse_dirt],Enchantments:[{id:"efficiency",lvl:10}]}
-give @a[team=yellow] diamond_shovel{Unbreakable:1b,CanDestroy:[dirt,coarse_dirt],Enchantments:[{id:"efficiency",lvl:10}]}
-
-give @a[team=yellow] minecraft:netherite_upgrade_smithing_template
-give @a[team=yellow] stick
-
+effect clear @a[team=yellow] resistance
+give @a[team=yellow] snowball 12
 # 开始计时
 scoreboard players set yellow gr_currenttime 0
 function gr:rooms/6/yellow/time

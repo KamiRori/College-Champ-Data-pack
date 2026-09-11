@@ -1,0 +1,1 @@
+place template fatesplate:plate/green 10972 101 10972

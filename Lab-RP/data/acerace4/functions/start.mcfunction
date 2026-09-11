@@ -149,7 +149,7 @@ scoreboard players set @a ar_aqualauncher 0
 #function acerace4:effectblock/aqualauncher
 # Timing point
 function master:timer/timeleft/10min
-function acerace4:timing/master
+execute unless score modifier_teamrelay ar_game matches 1 run function acerace4:timing/master
 function acerace4:scoreboard/refresh
 #
 ##BOAT
@@ -166,3 +166,10 @@ item replace entity @a[team=purple] armor.feet with leather_boots{Unbreakable:1,
 item replace entity @a[team=pink] armor.feet with leather_boots{Unbreakable:1,display:{color:16711927},Enchantments:[{id:"binding_curse",lvl:1},{id:"feather_falling",lvl:10}]} 1 
 
 tellraw @a[tag=_transcript] ["  §bTranscript >> §f§6Event State: §7ACE_RACE_PRE_GAME§f -> ACE_RACE_IN_GAME"," §7[",{"score":{"name": "hour","objective": "_transcript"},"color": "gray"},"§7:",{"score":{"name": "minute_padding","objective": "_transcript"},"color": "gray"},{"score":{"name": "minute","objective": "_transcript"},"color": "gray"},"§7:",{"score":{"name": "second_padding","objective": "_transcript"},"color": "gray"},{"score":{"name": "second","objective": "_transcript"},"color": "gray"},"§7]"]
+
+# Modifier: Rocket Spleef
+execute if score modifier_rocket ar_game matches 1 run function acerace4:modifiers/rocket_spleef
+
+# Modifier: Team Relay
+execute if score modifier_teamrelay ar_game matches 1 run function acerace4:modifiers/teamrelay
+execute if score modifier_teamrelay ar_game matches 1 run function acerace4:modifiers/wildcard

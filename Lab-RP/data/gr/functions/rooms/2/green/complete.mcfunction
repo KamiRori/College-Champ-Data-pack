@@ -2,6 +2,7 @@
 
 # Open Gates
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_greenanchor] at @s run summon area_effect_cloud ~ ~10 ~15 {Duration:9999999,Tags:["gr_opener"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=gr_greenanchor] at @s run fill ~26 101 ~1 ~28 103 ~29 air replace black_stained_glass_pane
 
 # Playsound
 execute as @a[team=green] at @s run playsound gr.roomcomplete record @s
@@ -18,8 +19,8 @@ scoreboard players operation green gr_currentpos = 2 gr_indvroom
 function gr:scoreboard/calc
 
 # Announce position
-tellraw @a[team=!green] ["",{"translate":"team.green"},"§7第",{"score":{"name": "2","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§5Deserted Village","§e]"]
-tellraw @a[team=green] ["","§7你","§7第",{"score":{"name": "2","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§5Deserted Village","§e]"]
+tellraw @a[team=!green] ["",{"translate":"team.green"},"§7第",{"score":{"name": "2","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§6Mesa Range","§e]"]
+tellraw @a[team=green] ["","§7你","§7第",{"score":{"name": "2","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§6Mesa Range","§e]"]
 # Initiate next room
 scoreboard players add green gr_teamphase 1
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_greenanchor] at @s run tp @s ~-47 ~ ~

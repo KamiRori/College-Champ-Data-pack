@@ -16,6 +16,7 @@ execute if score 1 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 1 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=1,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 1 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=1,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 1 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=1,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 1 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=1,limit=1] CustomName set value '["","???"]'
 
 execute if score 2 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=2,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 2 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=2,limit=1] CustomName set value '["","Battle Box"]'
@@ -34,6 +35,7 @@ execute if score 2 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 2 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=2,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 2 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=2,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 2 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=2,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 2 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=2,limit=1] CustomName set value '["","???"]'
 
 execute if score 3 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=3,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 3 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=3,limit=1] CustomName set value '["","Battle Box"]'
@@ -52,6 +54,7 @@ execute if score 3 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 3 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=3,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 3 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=3,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 3 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=3,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 3 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=3,limit=1] CustomName set value '["","???"]'
 
 execute if score 4 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=4,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 4 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=4,limit=1] CustomName set value '["","Battle Box"]'
@@ -70,6 +73,7 @@ execute if score 4 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 4 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=4,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 4 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=4,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 4 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=4,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 4 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=4,limit=1] CustomName set value '["","???"]'
 
 execute if score 5 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=5,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 5 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=5,limit=1] CustomName set value '["","Battle Box"]'
@@ -88,6 +92,7 @@ execute if score 5 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 5 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=5,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 5 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=5,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 5 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=5,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 5 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=5,limit=1] CustomName set value '["","???"]'
 
 execute if score 6 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=6,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 6 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=6,limit=1] CustomName set value '["","Battle Box"]'
@@ -106,6 +111,7 @@ execute if score 6 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 6 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=6,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 6 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=6,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 6 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=6,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 6 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=6,limit=1] CustomName set value '["","???"]'
 
 execute if score 7 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=7,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 7 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=7,limit=1] CustomName set value '["","Battle Box"]'
@@ -124,6 +130,7 @@ execute if score 7 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 7 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=7,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 7 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=7,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 7 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=7,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 7 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=7,limit=1] CustomName set value '["","???"]'
 
 execute if score 8 tourney_games matches 1 run data modify entity @e[type=marker,tag=domeanchor,tag=8,limit=1] CustomName set value '["","Parkour Tag"]'
 execute if score 8 tourney_games matches 2 run data modify entity @e[type=marker,tag=domeanchor,tag=8,limit=1] CustomName set value '["","Battle Box"]'
@@ -142,4 +149,5 @@ execute if score 8 tourney_games matches 14 run data modify entity @e[type=marke
 execute if score 8 tourney_games matches 15 run data modify entity @e[type=marker,tag=domeanchor,tag=8,limit=1] CustomName set value '["","Bingo But Fast"]'
 execute if score 8 tourney_games matches 16 run data modify entity @e[type=marker,tag=domeanchor,tag=8,limit=1] CustomName set value '["","Skyblockle"]'
 execute if score 8 tourney_games matches 17 run data modify entity @e[type=marker,tag=domeanchor,tag=8,limit=1] CustomName set value '["","Railroad Rush"]'
+execute if score 8 tourney_games matches 18 run data modify entity @e[type=marker,tag=domeanchor,tag=8,limit=1] CustomName set value '["","???"]'
 

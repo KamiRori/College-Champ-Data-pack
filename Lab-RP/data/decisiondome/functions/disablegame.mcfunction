@@ -153,6 +153,15 @@ execute if score 17 dd_games matches 1 if score 6 tourney_games matches 17 run s
 execute if score 17 dd_games matches 1 if score 7 tourney_games matches 17 run scoreboard players set 7 tourney_games 0
 execute if score 17 dd_games matches 1 if score 8 tourney_games matches 17 run scoreboard players set 8 tourney_games 0
 
+execute if score 18 dd_games matches 1 if score 1 tourney_games matches 18 run scoreboard players set 1 tourney_games 0
+execute if score 18 dd_games matches 1 if score 2 tourney_games matches 18 run scoreboard players set 2 tourney_games 0
+execute if score 18 dd_games matches 1 if score 3 tourney_games matches 18 run scoreboard players set 3 tourney_games 0
+execute if score 18 dd_games matches 1 if score 4 tourney_games matches 18 run scoreboard players set 4 tourney_games 0
+execute if score 18 dd_games matches 1 if score 5 tourney_games matches 18 run scoreboard players set 5 tourney_games 0
+execute if score 18 dd_games matches 1 if score 6 tourney_games matches 18 run scoreboard players set 6 tourney_games 0
+execute if score 18 dd_games matches 1 if score 7 tourney_games matches 18 run scoreboard players set 7 tourney_games 0
+execute if score 18 dd_games matches 1 if score 8 tourney_games matches 18 run scoreboard players set 8 tourney_games 0
+
 execute unless score 1 tourney_games matches 0 run function decisiondome:column/1/white
 execute unless score 2 tourney_games matches 0 run function decisiondome:column/2/white
 execute unless score 3 tourney_games matches 0 run function decisiondome:column/3/white

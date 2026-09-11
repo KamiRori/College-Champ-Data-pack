@@ -21,7 +21,7 @@ execute if entity @a[team=purple,tag=p.score_tweak_win] run scoreboard players r
 
 tag @a[team=purple] remove bb_noclear
 
-execute as @a[team=purple,tag=bb_lost_survive] run tellraw @s  "[§6+10分§f] 回合失败时存活。" 
+execute as @a[team=purple,tag=bb_lost_survive] run tellraw @s "[§6+10分§f] 回合失败时存活。" 
 execute as @a[team=purple,tag=bb_lost_survive] run scoreboard players add @s bb_indvscore 10
 
 tag @a[team=purple] remove bb_lost_survive

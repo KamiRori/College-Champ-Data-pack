@@ -25,6 +25,7 @@ scoreboard objectives remove gr_totaltime
 scoreboard objectives add gr_totaltime dummy
 scoreboard players set ms gr_totaltime 0
 function gr:time/igt
+function gr:death_effect_reset
 # Init first room
 function gr:rooms/1/red/master
 function gr:rooms/1/blue/master
@@ -49,7 +50,7 @@ execute as @r[team=purple] run scoreboard players add total gr_game 1
 tellraw @a[tag=_transcript] ["  §bTranscript >> §f游戏开始！"," §7[",{"score":{"name": "hour","objective": "_transcript"},"color": "gray"},"§7:",{"score":{"name": "minute_padding","objective": "_transcript"},"color": "gray"},{"score":{"name": "minute","objective": "_transcript"},"color": "gray"},"§7:",{"score":{"name": "second_padding","objective": "_transcript"},"color": "gray"},{"score":{"name": "second","objective": "_transcript"},"color": "gray"},"§7]"]
 
 # Glowing
-effect give @a[team=!spec] glowing infinite 0 true
+#effect give @a[team=!spec] glowing infinite 0 true
 
 function gr:removetnt
 schedule function gr:removeremovetnt 10t

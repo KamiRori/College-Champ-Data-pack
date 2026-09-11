@@ -35,7 +35,7 @@ tag @s remove me
 execute if score @s ar_laptime < 1 ar_bestlaptime run function acerace4:bestlap/1
 execute if score @s ar_laptime < 2 ar_bestlaptime if score @s ar_laptime > 1 ar_bestlaptime run function acerace4:bestlap/2
 execute if score @s ar_laptime < 3 ar_bestlaptime if score @s ar_laptime > 2 ar_bestlaptime run function acerace4:bestlap/3
-execute if score @s ar_laptime < 4 ar_bestlaptime if score @s ar_laptime > 3 ar_bestlaptime run function acerace4:bestlap/3
+execute if score @s ar_laptime < 4 ar_bestlaptime if score @s ar_laptime > 3 ar_bestlaptime run function acerace4:bestlap/4
 execute if score @s ar_laptime < 5 ar_bestlaptime if score @s ar_laptime > 4 ar_bestlaptime run function acerace4:bestlap/5
 
 # Tied?
@@ -205,6 +205,7 @@ execute if score @s ar_temp2 matches 10..59 if score @s ar_temp3 matches 10..99 
 
 
 # Cleanup
+tag @s add ar_finishcourse_stay
 tag @s remove ar_finishcourse
 scoreboard players set @s ar_cp 0
 

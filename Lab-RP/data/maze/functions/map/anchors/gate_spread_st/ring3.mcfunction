@@ -1,0 +1,6 @@
+
+
+summon marker ~ ~-1 ~ {Tags:["maze_anchors","room_gate","ring_3","st"]}
+summon marker ~1 ~-1 ~ {Tags:["maze_anchors","room_gate","ring_3","st"]}
+summon marker ~-1 ~-1 ~ {Tags:["maze_anchors","room_gate","ring_3","st"]}
+tellraw @s "[§6Dev§f] Placed an §6Gate anchor §6set§f for §aRing 3."

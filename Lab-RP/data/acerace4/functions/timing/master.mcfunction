@@ -42,6 +42,9 @@ execute as @a[team=!spec,scores={ar_laps=1..3,ar_cp=0..6}] at @s if block ~ 0 ~ 
 
 execute as @a[team=!spec,scores={ar_laps=1..3,ar_cp=1..7}] at @s if block ~ 0 ~ light_blue_concrete run function acerace4:checkpoint/send_back
 
+#Fall into lava sendback
+execute as @a[team=!spec,scores={ar_laps=1..3}] at @s if block ~ ~ ~ lava run function acerace4:checkpoint/return_cp
+
 ## Finish Line check (3 LAPS)
 execute as @a[team=!spec,scores={ar_laps=1..2,ar_cp=8}] at @s if block ~ 0 ~ light_blue_concrete run tag @s add ar_finishlap
 execute as @a[team=!spec,scores={ar_laps=3,ar_cp=8}] at @s if block ~ 0 ~ light_blue_concrete run tag @s add ar_finishcourse

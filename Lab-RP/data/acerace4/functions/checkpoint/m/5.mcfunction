@@ -11,3 +11,7 @@ item replace entity @s armor.feet with air
 
 title @s actionbar ["",{"text": "+","color": "green"}," 䅄",{"text": " 鞘翅","color": "green"},"  ",{"text": "-","color": "red"}," 䅂",{"text": " 海豚的恩惠","color": "red"}]
 
+execute if entity @s[tag=ar_noelytra] run item replace entity @s armor.chest with air
+execute if entity @s[tag=ar_noelytra] run title @s actionbar ["",{"text": "+","color": "green"}," 毺",{"text": " 无法获得鞘翅","color": "red"},"  ",{"text": "-","color": "red"}," 䅂",{"text": " 海豚的恩惠","color": "red"}]
+
+tag @s remove ar_noelytra

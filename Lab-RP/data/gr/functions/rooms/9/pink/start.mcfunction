@@ -9,11 +9,12 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_pinkanchor] at @s run summ
 
 kill @e[type=armor_stand,tag=gr_pink,tag=divider]
 execute as @a[team=pink] at @s run spawnpoint
+execute as @a[team=pink] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add pink gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_pinksb "§a§l当前房间: §rConveyors"
+scoreboard players display name var_room_name gr_pinksb "§a§l当前房间: §rWipeout"
 # Play sound and title
 execute as @a[team=pink] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=pink] times 20 40 20

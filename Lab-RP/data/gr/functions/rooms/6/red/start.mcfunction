@@ -9,24 +9,21 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run summo
 
 kill @e[type=armor_stand,tag=gr_red,tag=divider]
 execute as @a[team=red] at @s run spawnpoint
+execute as @a[team=red] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add red gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_redsb "§a§l当前房间: §rDig Site"
+scoreboard players display name var_room_name gr_redsb "§a§l当前房间: §rCreeper Guide"
 # Play sound and title
 execute as @a[team=red] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=red] times 20 40 20
 title @a[team=red] subtitle ""
-title @a[team=red] title "§e合成装备！"
+title @a[team=red] title "§e引导苦力怕！"
 # Give items
 clear @a[team=red]
-give @a[team=red] diamond_pickaxe{Unbreakable:1b,CanDestroy:[ancient_debris,diamond_ore,coal_ore,deepslate_gold_ore,dirt,coarse_dirt],Enchantments:[{id:"efficiency",lvl:10}]}
-give @a[team=red] diamond_shovel{Unbreakable:1b,CanDestroy:[dirt,coarse_dirt],Enchantments:[{id:"efficiency",lvl:10}]}
-
-give @a[team=red] minecraft:netherite_upgrade_smithing_template
-give @a[team=red] stick
-
+effect clear @a[team=red] resistance
+give @a[team=red] snowball 12
 # 开始计时
 scoreboard players set red gr_currenttime 0
 function gr:rooms/6/red/time

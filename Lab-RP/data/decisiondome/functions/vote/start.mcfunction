@@ -42,3 +42,6 @@ scoreboard objectives add dd_egg_dupe dummy
 
 # Chaos Override
 execute if score gamecount tourney_stats matches 0 if score modifiers_chaos_multi tourney_stats matches 1 run function decisiondome:modifiers/force_segment_1
+
+# Modifier: Reversed Vote
+execute if score modifier_reversed_vote tourney_stats matches 1 run function decisiondome:modifiers/reversed_vote/init

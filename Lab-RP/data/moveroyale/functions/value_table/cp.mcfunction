@@ -1,0 +1,1232 @@
+
+# CHECKPOINT COORDS. THIS IS RECORDED INTO PLAYER SCORES FOR FURTHER USAGE.
+# a checkpoint set consists of X/Y/Z/ANGLE1/ANGLE2.
+# Value should be input at a x10 Multiplier.
+# for example, for a /tp @s 100.5 12 99 45 0.
+# The value should be input as 1005 120 990 450 0.
+
+tellraw @s ["§bUpdating values of checkpoints."]
+scoreboard objectives add moveroyale_cptable dummy
+
+# OBSTACLES (obstacles_[arena_no]_[difficulty]_[copy_no]_[checkpoint_no]_[value_type])
+## HEIGHT BORDER
+scoreboard players set obstacles_height_limit moveroyale_cptable 650
+scoreboard players set obstacles_low_limit moveroyale_cptable 439
+## COMPLETION COORDS
+scoreboard players set obstacles_s1_x moveroyale_cptable 2040260
+scoreboard players set obstacles_s2_x moveroyale_cptable 2040570
+scoreboard players set obstacles_s3_x moveroyale_cptable 2040880
+## Arena 1
+scoreboard players set obstacles_1_e_1_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_e_1_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_1_1_z moveroyale_cptable 2036180
+scoreboard players set obstacles_1_e_1_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_2_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_e_2_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_2_1_z moveroyale_cptable 2036370
+scoreboard players set obstacles_1_e_2_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_2_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_3_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_e_3_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_3_1_z moveroyale_cptable 2036560
+scoreboard players set obstacles_1_e_3_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_3_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_4_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_e_4_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_4_1_z moveroyale_cptable 2036750
+scoreboard players set obstacles_1_e_4_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_4_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_1_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_h_1_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_1_1_z moveroyale_cptable 2036940
+scoreboard players set obstacles_1_h_1_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_2_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_h_2_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_2_1_z moveroyale_cptable 2037130
+scoreboard players set obstacles_1_h_2_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_2_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_3_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_h_3_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_3_1_z moveroyale_cptable 2037320
+scoreboard players set obstacles_1_h_3_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_3_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_4_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_1_h_4_1_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_4_1_z moveroyale_cptable 2037510
+scoreboard players set obstacles_1_h_4_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_4_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_1_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_e_1_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_1_2_z moveroyale_cptable 2036180
+scoreboard players set obstacles_1_e_1_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_2_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_e_2_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_2_2_z moveroyale_cptable 2036370
+scoreboard players set obstacles_1_e_2_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_2_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_3_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_e_3_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_3_2_z moveroyale_cptable 2036560
+scoreboard players set obstacles_1_e_3_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_3_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_4_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_e_4_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_4_2_z moveroyale_cptable 2036750
+scoreboard players set obstacles_1_e_4_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_4_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_1_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_h_1_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_1_2_z moveroyale_cptable 2036940
+scoreboard players set obstacles_1_h_1_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_2_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_h_2_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_2_2_z moveroyale_cptable 2037130
+scoreboard players set obstacles_1_h_2_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_2_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_3_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_h_3_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_3_2_z moveroyale_cptable 2037320
+scoreboard players set obstacles_1_h_3_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_3_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_4_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_1_h_4_2_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_4_2_z moveroyale_cptable 2037510
+scoreboard players set obstacles_1_h_4_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_4_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_1_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_e_1_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_1_3_z moveroyale_cptable 2036180
+scoreboard players set obstacles_1_e_1_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_2_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_e_2_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_2_3_z moveroyale_cptable 2036370
+scoreboard players set obstacles_1_e_2_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_2_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_3_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_e_3_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_3_3_z moveroyale_cptable 2036560
+scoreboard players set obstacles_1_e_3_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_3_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_e_4_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_e_4_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_e_4_3_z moveroyale_cptable 2036750
+scoreboard players set obstacles_1_e_4_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_e_4_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_1_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_h_1_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_1_3_z moveroyale_cptable 2036940
+scoreboard players set obstacles_1_h_1_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_2_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_h_2_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_2_3_z moveroyale_cptable 2037130
+scoreboard players set obstacles_1_h_2_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_2_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_3_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_h_3_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_3_3_z moveroyale_cptable 2037320
+scoreboard players set obstacles_1_h_3_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_3_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_1_h_4_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_1_h_4_3_y moveroyale_cptable 510
+scoreboard players set obstacles_1_h_4_3_z moveroyale_cptable 2037510
+scoreboard players set obstacles_1_h_4_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_1_h_4_3_angle2 moveroyale_cptable 0
+
+## Arena 2
+scoreboard players set obstacles_2_e_1_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_e_1_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_1_1_z moveroyale_cptable 2037710
+scoreboard players set obstacles_2_e_1_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_2_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_e_2_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_2_1_z moveroyale_cptable 2037900
+scoreboard players set obstacles_2_e_2_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_2_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_3_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_e_3_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_3_1_z moveroyale_cptable 2038090
+scoreboard players set obstacles_2_e_3_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_3_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_4_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_e_4_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_4_1_z moveroyale_cptable 2038280
+scoreboard players set obstacles_2_e_4_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_4_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_1_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_h_1_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_1_1_z moveroyale_cptable 2038470
+scoreboard players set obstacles_2_h_1_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_2_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_h_2_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_2_1_z moveroyale_cptable 2038660
+scoreboard players set obstacles_2_h_2_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_2_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_3_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_h_3_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_3_1_z moveroyale_cptable 2038850
+scoreboard players set obstacles_2_h_3_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_3_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_4_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_2_h_4_1_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_4_1_z moveroyale_cptable 2039040
+scoreboard players set obstacles_2_h_4_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_4_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_1_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_e_1_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_1_2_z moveroyale_cptable 2037710
+scoreboard players set obstacles_2_e_1_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_2_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_e_2_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_2_2_z moveroyale_cptable 2037900
+scoreboard players set obstacles_2_e_2_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_2_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_3_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_e_3_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_3_2_z moveroyale_cptable 2038090
+scoreboard players set obstacles_2_e_3_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_3_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_4_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_e_4_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_4_2_z moveroyale_cptable 2038280
+scoreboard players set obstacles_2_e_4_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_4_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_1_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_h_1_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_1_2_z moveroyale_cptable 2038470
+scoreboard players set obstacles_2_h_1_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_2_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_h_2_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_2_2_z moveroyale_cptable 2038660
+scoreboard players set obstacles_2_h_2_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_2_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_3_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_h_3_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_3_2_z moveroyale_cptable 2038850
+scoreboard players set obstacles_2_h_3_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_3_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_4_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_2_h_4_2_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_4_2_z moveroyale_cptable 2039040
+scoreboard players set obstacles_2_h_4_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_4_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_1_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_e_1_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_1_3_z moveroyale_cptable 2037710
+scoreboard players set obstacles_2_e_1_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_2_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_e_2_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_2_3_z moveroyale_cptable 2037900
+scoreboard players set obstacles_2_e_2_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_2_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_3_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_e_3_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_3_3_z moveroyale_cptable 2038090
+scoreboard players set obstacles_2_e_3_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_3_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_e_4_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_e_4_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_e_4_3_z moveroyale_cptable 2038280
+scoreboard players set obstacles_2_e_4_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_e_4_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_1_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_h_1_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_1_3_z moveroyale_cptable 2038470
+scoreboard players set obstacles_2_h_1_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_2_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_h_2_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_2_3_z moveroyale_cptable 2038660
+scoreboard players set obstacles_2_h_2_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_2_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_3_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_h_3_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_3_3_z moveroyale_cptable 2038850
+scoreboard players set obstacles_2_h_3_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_3_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_2_h_4_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_2_h_4_3_y moveroyale_cptable 510
+scoreboard players set obstacles_2_h_4_3_z moveroyale_cptable 2039040
+scoreboard players set obstacles_2_h_4_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_2_h_4_3_angle2 moveroyale_cptable 0
+## Arena 3
+scoreboard players set obstacles_3_e_1_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_e_1_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_1_1_z moveroyale_cptable 2039240
+scoreboard players set obstacles_3_e_1_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_2_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_e_2_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_2_1_z moveroyale_cptable 2039430
+scoreboard players set obstacles_3_e_2_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_2_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_3_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_e_3_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_3_1_z moveroyale_cptable 2039620
+scoreboard players set obstacles_3_e_3_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_3_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_4_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_e_4_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_4_1_z moveroyale_cptable 2039810
+scoreboard players set obstacles_3_e_4_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_4_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_1_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_h_1_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_1_1_z moveroyale_cptable 2040000
+scoreboard players set obstacles_3_h_1_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_2_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_h_2_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_2_1_z moveroyale_cptable 2040190
+scoreboard players set obstacles_3_h_2_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_2_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_3_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_h_3_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_3_1_z moveroyale_cptable 2040380
+scoreboard players set obstacles_3_h_3_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_3_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_4_1_x moveroyale_cptable 2039980
+scoreboard players set obstacles_3_h_4_1_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_4_1_z moveroyale_cptable 2040570
+scoreboard players set obstacles_3_h_4_1_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_4_1_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_1_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_e_1_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_1_2_z moveroyale_cptable 2039240
+scoreboard players set obstacles_3_e_1_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_2_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_e_2_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_2_2_z moveroyale_cptable 2039430
+scoreboard players set obstacles_3_e_2_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_2_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_3_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_e_3_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_3_2_z moveroyale_cptable 2039620
+scoreboard players set obstacles_3_e_3_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_3_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_4_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_e_4_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_4_2_z moveroyale_cptable 2039810
+scoreboard players set obstacles_3_e_4_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_4_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_1_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_h_1_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_1_2_z moveroyale_cptable 2040000
+scoreboard players set obstacles_3_h_1_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_2_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_h_2_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_2_2_z moveroyale_cptable 2040190
+scoreboard players set obstacles_3_h_2_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_2_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_3_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_h_3_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_3_2_z moveroyale_cptable 2040380
+scoreboard players set obstacles_3_h_3_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_3_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_4_2_x moveroyale_cptable 2040290
+scoreboard players set obstacles_3_h_4_2_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_4_2_z moveroyale_cptable 2040570
+scoreboard players set obstacles_3_h_4_2_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_4_2_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_1_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_e_1_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_1_3_z moveroyale_cptable 2039240
+scoreboard players set obstacles_3_e_1_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_2_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_e_2_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_2_3_z moveroyale_cptable 2039430
+scoreboard players set obstacles_3_e_2_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_2_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_3_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_e_3_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_3_3_z moveroyale_cptable 2039620
+scoreboard players set obstacles_3_e_3_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_3_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_e_4_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_e_4_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_e_4_3_z moveroyale_cptable 2039810
+scoreboard players set obstacles_3_e_4_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_e_4_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_1_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_h_1_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_1_3_z moveroyale_cptable 2040000
+scoreboard players set obstacles_3_h_1_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_2_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_h_2_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_2_3_z moveroyale_cptable 2040190
+scoreboard players set obstacles_3_h_2_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_2_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_3_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_h_3_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_3_3_z moveroyale_cptable 2040380
+scoreboard players set obstacles_3_h_3_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_3_3_angle2 moveroyale_cptable 0
+
+scoreboard players set obstacles_3_h_4_3_x moveroyale_cptable 2040600
+scoreboard players set obstacles_3_h_4_3_y moveroyale_cptable 510
+scoreboard players set obstacles_3_h_4_3_z moveroyale_cptable 2040570
+scoreboard players set obstacles_3_h_4_3_angle1 moveroyale_cptable -900
+scoreboard players set obstacles_3_h_4_3_angle2 moveroyale_cptable 0
+
+
+# PARKOUR (parkour_[arena_no]_[difficulty]_[checkpoint_no]_[value_type])
+## Limits
+scoreboard players set parkour_s0_z moveroyale_cptable 2020040
+scoreboard players set parkour_s1_z moveroyale_cptable 2020290
+scoreboard players set parkour_s2_z moveroyale_cptable 2020610
+scoreboard players set parkour_s3_z moveroyale_cptable 2020930
+scoreboard players set parkour_low_limit moveroyale_cptable 350
+## HARD
+### HARD - ARENA 1
+scoreboard players set parkour_1_h_1_x moveroyale_cptable 2020000
+scoreboard players set parkour_1_h_1_y moveroyale_cptable 510
+scoreboard players set parkour_1_h_1_z moveroyale_cptable 2020000
+scoreboard players set parkour_1_h_1_angle1 moveroyale_cptable 0
+scoreboard players set parkour_1_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_1_h_2_x moveroyale_cptable 2020000
+scoreboard players set parkour_1_h_2_y moveroyale_cptable 510
+scoreboard players set parkour_1_h_2_z moveroyale_cptable 2020320
+scoreboard players set parkour_1_h_2_angle1 moveroyale_cptable 0
+scoreboard players set parkour_1_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_1_h_3_x moveroyale_cptable 2020000
+scoreboard players set parkour_1_h_3_y moveroyale_cptable 510
+scoreboard players set parkour_1_h_3_z moveroyale_cptable 2020640
+scoreboard players set parkour_1_h_3_angle1 moveroyale_cptable 0
+scoreboard players set parkour_1_h_3_angle2 moveroyale_cptable 0
+### HARD ARENA 2
+scoreboard players set parkour_2_h_1_x moveroyale_cptable 2019740
+scoreboard players set parkour_2_h_1_y moveroyale_cptable 510
+scoreboard players set parkour_2_h_1_z moveroyale_cptable 2020000
+scoreboard players set parkour_2_h_1_angle1 moveroyale_cptable 0
+scoreboard players set parkour_2_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_2_h_2_x moveroyale_cptable 2019740
+scoreboard players set parkour_2_h_2_y moveroyale_cptable 510
+scoreboard players set parkour_2_h_2_z moveroyale_cptable 2020320
+scoreboard players set parkour_2_h_2_angle1 moveroyale_cptable 0
+scoreboard players set parkour_2_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_2_h_3_x moveroyale_cptable 2019740
+scoreboard players set parkour_2_h_3_y moveroyale_cptable 510
+scoreboard players set parkour_2_h_3_z moveroyale_cptable 2020640
+scoreboard players set parkour_2_h_3_angle1 moveroyale_cptable 0
+scoreboard players set parkour_2_h_3_angle2 moveroyale_cptable 0
+
+### HARD ARENA 3
+scoreboard players set parkour_3_h_1_x moveroyale_cptable 2019480
+scoreboard players set parkour_3_h_1_y moveroyale_cptable 510
+scoreboard players set parkour_3_h_1_z moveroyale_cptable 2020000
+scoreboard players set parkour_3_h_1_angle1 moveroyale_cptable 0
+scoreboard players set parkour_3_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_3_h_2_x moveroyale_cptable 2019480
+scoreboard players set parkour_3_h_2_y moveroyale_cptable 510
+scoreboard players set parkour_3_h_2_z moveroyale_cptable 2020320
+scoreboard players set parkour_3_h_2_angle1 moveroyale_cptable 0
+scoreboard players set parkour_3_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_3_h_3_x moveroyale_cptable 2019480
+scoreboard players set parkour_3_h_3_y moveroyale_cptable 510
+scoreboard players set parkour_3_h_3_z moveroyale_cptable 2020640
+scoreboard players set parkour_3_h_3_angle1 moveroyale_cptable 0
+scoreboard players set parkour_3_h_3_angle2 moveroyale_cptable 0
+## EASY
+### ARENA 1
+scoreboard players set parkour_1_e_1_x moveroyale_cptable 2020260
+scoreboard players set parkour_1_e_1_y moveroyale_cptable 510
+scoreboard players set parkour_1_e_1_z moveroyale_cptable 2020000
+scoreboard players set parkour_1_e_1_angle1 moveroyale_cptable 0
+scoreboard players set parkour_1_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_1_e_2_x moveroyale_cptable 2020260
+scoreboard players set parkour_1_e_2_y moveroyale_cptable 510
+scoreboard players set parkour_1_e_2_z moveroyale_cptable 2020320
+scoreboard players set parkour_1_e_2_angle1 moveroyale_cptable 0
+scoreboard players set parkour_1_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_1_e_3_x moveroyale_cptable 2020260
+scoreboard players set parkour_1_e_3_y moveroyale_cptable 510
+scoreboard players set parkour_1_e_3_z moveroyale_cptable 2020640
+scoreboard players set parkour_1_e_3_angle1 moveroyale_cptable 0
+scoreboard players set parkour_1_e_3_angle2 moveroyale_cptable 0
+### ARENA 2
+scoreboard players set parkour_2_e_1_x moveroyale_cptable 2020520
+scoreboard players set parkour_2_e_1_y moveroyale_cptable 510
+scoreboard players set parkour_2_e_1_z moveroyale_cptable 2020000
+scoreboard players set parkour_2_e_1_angle1 moveroyale_cptable 0
+scoreboard players set parkour_2_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_2_e_2_x moveroyale_cptable 2020520
+scoreboard players set parkour_2_e_2_y moveroyale_cptable 510
+scoreboard players set parkour_2_e_2_z moveroyale_cptable 2020320
+scoreboard players set parkour_2_e_2_angle1 moveroyale_cptable 0
+scoreboard players set parkour_2_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_2_e_3_x moveroyale_cptable 2020520
+scoreboard players set parkour_2_e_3_y moveroyale_cptable 510
+scoreboard players set parkour_2_e_3_z moveroyale_cptable 2020640
+scoreboard players set parkour_2_e_3_angle1 moveroyale_cptable 0
+scoreboard players set parkour_2_e_3_angle2 moveroyale_cptable 0
+### ARENA 3
+scoreboard players set parkour_3_e_1_x moveroyale_cptable 2020780
+scoreboard players set parkour_3_e_1_y moveroyale_cptable 510
+scoreboard players set parkour_3_e_1_z moveroyale_cptable 2020000
+scoreboard players set parkour_3_e_1_angle1 moveroyale_cptable 0
+scoreboard players set parkour_3_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_3_e_2_x moveroyale_cptable 2020780
+scoreboard players set parkour_3_e_2_y moveroyale_cptable 510
+scoreboard players set parkour_3_e_2_z moveroyale_cptable 2020320
+scoreboard players set parkour_3_e_2_angle1 moveroyale_cptable 0
+scoreboard players set parkour_3_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set parkour_3_e_3_x moveroyale_cptable 2020780
+scoreboard players set parkour_3_e_3_y moveroyale_cptable 510
+scoreboard players set parkour_3_e_3_z moveroyale_cptable 2020640
+scoreboard players set parkour_3_e_3_angle1 moveroyale_cptable 0
+scoreboard players set parkour_3_e_3_angle2 moveroyale_cptable 0
+# ICE BOATS (EACH AREA IS +1000 in X Apart ) (iceboat_[arena_no]_[difficulty]_[copy_no]_[checkpoint_no]_[value_type])
+## Arena 1
+scoreboard players set iceboat_low_limit moveroyale_cptable 0
+### easy
+scoreboard players set iceboat_1_e_1_1_x moveroyale_cptable 2200010
+scoreboard players set iceboat_1_e_1_1_y moveroyale_cptable 1000
+scoreboard players set iceboat_1_e_1_1_z moveroyale_cptable 2200030
+scoreboard players set iceboat_1_e_1_1_angle1 moveroyale_cptable 0
+scoreboard players set iceboat_1_e_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_1_e_1_2_x moveroyale_cptable 2199140
+scoreboard players set iceboat_1_e_1_2_y moveroyale_cptable 900
+scoreboard players set iceboat_1_e_1_2_z moveroyale_cptable 2201590
+scoreboard players set iceboat_1_e_1_2_angle1 moveroyale_cptable 500
+scoreboard players set iceboat_1_e_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_1_e_1_3_x moveroyale_cptable 2198040
+scoreboard players set iceboat_1_e_1_3_y moveroyale_cptable 700
+scoreboard players set iceboat_1_e_1_3_z moveroyale_cptable 2202600
+scoreboard players set iceboat_1_e_1_3_angle1 moveroyale_cptable 550
+scoreboard players set iceboat_1_e_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players operation iceboat_1_e_2_1_x moveroyale_cptable = iceboat_1_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_1_y moveroyale_cptable = iceboat_1_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_1_z moveroyale_cptable = iceboat_1_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_1_angle1 moveroyale_cptable = iceboat_1_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_1_angle2 moveroyale_cptable = iceboat_1_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_e_2_2_x moveroyale_cptable = iceboat_1_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_2_y moveroyale_cptable = iceboat_1_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_2_z moveroyale_cptable = iceboat_1_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_2_angle1 moveroyale_cptable = iceboat_1_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_2_angle2 moveroyale_cptable = iceboat_1_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_e_2_3_x moveroyale_cptable = iceboat_1_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_3_y moveroyale_cptable = iceboat_1_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_3_z moveroyale_cptable = iceboat_1_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_3_angle1 moveroyale_cptable = iceboat_1_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_2_3_angle2 moveroyale_cptable = iceboat_1_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_1_e_2_1_x moveroyale_cptable 10000
+scoreboard players add iceboat_1_e_2_2_x moveroyale_cptable 10000
+scoreboard players add iceboat_1_e_2_3_x moveroyale_cptable 10000
+
+scoreboard players operation iceboat_1_e_3_1_x moveroyale_cptable = iceboat_1_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_1_y moveroyale_cptable = iceboat_1_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_1_z moveroyale_cptable = iceboat_1_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_1_angle1 moveroyale_cptable = iceboat_1_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_1_angle2 moveroyale_cptable = iceboat_1_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_e_3_2_x moveroyale_cptable = iceboat_1_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_2_y moveroyale_cptable = iceboat_1_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_2_z moveroyale_cptable = iceboat_1_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_2_angle1 moveroyale_cptable = iceboat_1_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_2_angle2 moveroyale_cptable = iceboat_1_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_e_3_3_x moveroyale_cptable = iceboat_1_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_3_y moveroyale_cptable = iceboat_1_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_3_z moveroyale_cptable = iceboat_1_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_3_angle1 moveroyale_cptable = iceboat_1_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_3_3_angle2 moveroyale_cptable = iceboat_1_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_1_e_3_1_x moveroyale_cptable 20000
+scoreboard players add iceboat_1_e_3_2_x moveroyale_cptable 20000
+scoreboard players add iceboat_1_e_3_3_x moveroyale_cptable 20000
+
+scoreboard players operation iceboat_1_e_4_1_x moveroyale_cptable = iceboat_1_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_1_y moveroyale_cptable = iceboat_1_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_1_z moveroyale_cptable = iceboat_1_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_1_angle1 moveroyale_cptable = iceboat_1_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_1_angle2 moveroyale_cptable = iceboat_1_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_e_4_2_x moveroyale_cptable = iceboat_1_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_2_y moveroyale_cptable = iceboat_1_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_2_z moveroyale_cptable = iceboat_1_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_2_angle1 moveroyale_cptable = iceboat_1_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_2_angle2 moveroyale_cptable = iceboat_1_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_e_4_3_x moveroyale_cptable = iceboat_1_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_3_y moveroyale_cptable = iceboat_1_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_3_z moveroyale_cptable = iceboat_1_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_3_angle1 moveroyale_cptable = iceboat_1_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_e_4_3_angle2 moveroyale_cptable = iceboat_1_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_1_e_4_1_x moveroyale_cptable 30000
+scoreboard players add iceboat_1_e_4_2_x moveroyale_cptable 30000
+scoreboard players add iceboat_1_e_4_3_x moveroyale_cptable 30000
+### hard
+scoreboard players set iceboat_1_h_1_1_x moveroyale_cptable 2240010
+scoreboard players set iceboat_1_h_1_1_y moveroyale_cptable 1000
+scoreboard players set iceboat_1_h_1_1_z moveroyale_cptable 2200030
+scoreboard players set iceboat_1_h_1_1_angle1 moveroyale_cptable 0
+scoreboard players set iceboat_1_h_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_1_h_1_2_x moveroyale_cptable 2239140
+scoreboard players set iceboat_1_h_1_2_y moveroyale_cptable 900
+scoreboard players set iceboat_1_h_1_2_z moveroyale_cptable 2201590
+scoreboard players set iceboat_1_h_1_2_angle1 moveroyale_cptable 500
+scoreboard players set iceboat_1_h_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_1_h_1_3_x moveroyale_cptable 2238040
+scoreboard players set iceboat_1_h_1_3_y moveroyale_cptable 700
+scoreboard players set iceboat_1_h_1_3_z moveroyale_cptable 2202600
+scoreboard players set iceboat_1_h_1_3_angle1 moveroyale_cptable 550
+scoreboard players set iceboat_1_h_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players operation iceboat_1_h_2_1_x moveroyale_cptable = iceboat_1_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_1_y moveroyale_cptable = iceboat_1_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_1_z moveroyale_cptable = iceboat_1_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_1_angle1 moveroyale_cptable = iceboat_1_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_1_angle2 moveroyale_cptable = iceboat_1_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_h_2_2_x moveroyale_cptable = iceboat_1_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_2_y moveroyale_cptable = iceboat_1_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_2_z moveroyale_cptable = iceboat_1_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_2_angle1 moveroyale_cptable = iceboat_1_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_2_angle2 moveroyale_cptable = iceboat_1_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_h_2_3_x moveroyale_cptable = iceboat_1_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_3_y moveroyale_cptable = iceboat_1_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_3_z moveroyale_cptable = iceboat_1_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_3_angle1 moveroyale_cptable = iceboat_1_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_2_3_angle2 moveroyale_cptable = iceboat_1_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_1_h_2_1_x moveroyale_cptable 10000
+scoreboard players add iceboat_1_h_2_2_x moveroyale_cptable 10000
+scoreboard players add iceboat_1_h_2_3_x moveroyale_cptable 10000
+
+scoreboard players operation iceboat_1_h_3_1_x moveroyale_cptable = iceboat_1_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_1_y moveroyale_cptable = iceboat_1_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_1_z moveroyale_cptable = iceboat_1_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_1_angle1 moveroyale_cptable = iceboat_1_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_1_angle2 moveroyale_cptable = iceboat_1_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_h_3_2_x moveroyale_cptable = iceboat_1_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_2_y moveroyale_cptable = iceboat_1_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_2_z moveroyale_cptable = iceboat_1_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_2_angle1 moveroyale_cptable = iceboat_1_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_2_angle2 moveroyale_cptable = iceboat_1_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_h_3_3_x moveroyale_cptable = iceboat_1_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_3_y moveroyale_cptable = iceboat_1_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_3_z moveroyale_cptable = iceboat_1_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_3_angle1 moveroyale_cptable = iceboat_1_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_3_3_angle2 moveroyale_cptable = iceboat_1_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_1_h_3_1_x moveroyale_cptable 20000
+scoreboard players add iceboat_1_h_3_2_x moveroyale_cptable 20000
+scoreboard players add iceboat_1_h_3_3_x moveroyale_cptable 20000
+
+scoreboard players operation iceboat_1_h_4_1_x moveroyale_cptable = iceboat_1_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_1_y moveroyale_cptable = iceboat_1_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_1_z moveroyale_cptable = iceboat_1_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_1_angle1 moveroyale_cptable = iceboat_1_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_1_angle2 moveroyale_cptable = iceboat_1_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_h_4_2_x moveroyale_cptable = iceboat_1_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_2_y moveroyale_cptable = iceboat_1_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_2_z moveroyale_cptable = iceboat_1_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_2_angle1 moveroyale_cptable = iceboat_1_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_2_angle2 moveroyale_cptable = iceboat_1_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_1_h_4_3_x moveroyale_cptable = iceboat_1_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_3_y moveroyale_cptable = iceboat_1_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_3_z moveroyale_cptable = iceboat_1_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_3_angle1 moveroyale_cptable = iceboat_1_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_1_h_4_3_angle2 moveroyale_cptable = iceboat_1_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_1_h_4_1_x moveroyale_cptable 30000
+scoreboard players add iceboat_1_h_4_2_x moveroyale_cptable 30000
+scoreboard players add iceboat_1_h_4_3_x moveroyale_cptable 30000
+
+## Arena 2
+scoreboard players set iceboat_2_e_1_1_x moveroyale_cptable 2299970
+scoreboard players set iceboat_2_e_1_1_y moveroyale_cptable 1000
+scoreboard players set iceboat_2_e_1_1_z moveroyale_cptable 2199950
+scoreboard players set iceboat_2_e_1_1_angle1 moveroyale_cptable 0
+scoreboard players set iceboat_2_e_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_2_e_1_2_x moveroyale_cptable 2299010
+scoreboard players set iceboat_2_e_1_2_y moveroyale_cptable 1010
+scoreboard players set iceboat_2_e_1_2_z moveroyale_cptable 2202110
+scoreboard players set iceboat_2_e_1_2_angle1 moveroyale_cptable 900
+scoreboard players set iceboat_2_e_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_2_e_1_3_x moveroyale_cptable 2299050
+scoreboard players set iceboat_2_e_1_3_y moveroyale_cptable 1040
+scoreboard players set iceboat_2_e_1_3_z moveroyale_cptable 2200590
+scoreboard players set iceboat_2_e_1_3_angle1 moveroyale_cptable 1800
+scoreboard players set iceboat_2_e_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players operation iceboat_2_e_2_1_x moveroyale_cptable = iceboat_2_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_1_y moveroyale_cptable = iceboat_2_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_1_z moveroyale_cptable = iceboat_2_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_1_angle1 moveroyale_cptable = iceboat_2_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_1_angle2 moveroyale_cptable = iceboat_2_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_e_2_2_x moveroyale_cptable = iceboat_2_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_2_y moveroyale_cptable = iceboat_2_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_2_z moveroyale_cptable = iceboat_2_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_2_angle1 moveroyale_cptable = iceboat_2_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_2_angle2 moveroyale_cptable = iceboat_2_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_e_2_3_x moveroyale_cptable = iceboat_2_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_3_y moveroyale_cptable = iceboat_2_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_3_z moveroyale_cptable = iceboat_2_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_3_angle1 moveroyale_cptable = iceboat_2_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_2_3_angle2 moveroyale_cptable = iceboat_2_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_2_e_2_1_x moveroyale_cptable 10000
+scoreboard players add iceboat_2_e_2_2_x moveroyale_cptable 10000
+scoreboard players add iceboat_2_e_2_3_x moveroyale_cptable 10000
+
+scoreboard players operation iceboat_2_e_3_1_x moveroyale_cptable = iceboat_2_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_1_y moveroyale_cptable = iceboat_2_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_1_z moveroyale_cptable = iceboat_2_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_1_angle1 moveroyale_cptable = iceboat_2_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_1_angle2 moveroyale_cptable = iceboat_2_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_e_3_2_x moveroyale_cptable = iceboat_2_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_2_y moveroyale_cptable = iceboat_2_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_2_z moveroyale_cptable = iceboat_2_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_2_angle1 moveroyale_cptable = iceboat_2_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_2_angle2 moveroyale_cptable = iceboat_2_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_e_3_3_x moveroyale_cptable = iceboat_2_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_3_y moveroyale_cptable = iceboat_2_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_3_z moveroyale_cptable = iceboat_2_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_3_angle1 moveroyale_cptable = iceboat_2_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_3_3_angle2 moveroyale_cptable = iceboat_2_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_2_e_3_1_x moveroyale_cptable 20000
+scoreboard players add iceboat_2_e_3_2_x moveroyale_cptable 20000
+scoreboard players add iceboat_2_e_3_3_x moveroyale_cptable 20000
+
+scoreboard players operation iceboat_2_e_4_1_x moveroyale_cptable = iceboat_2_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_1_y moveroyale_cptable = iceboat_2_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_1_z moveroyale_cptable = iceboat_2_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_1_angle1 moveroyale_cptable = iceboat_2_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_1_angle2 moveroyale_cptable = iceboat_2_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_e_4_2_x moveroyale_cptable = iceboat_2_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_2_y moveroyale_cptable = iceboat_2_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_2_z moveroyale_cptable = iceboat_2_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_2_angle1 moveroyale_cptable = iceboat_2_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_2_angle2 moveroyale_cptable = iceboat_2_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_e_4_3_x moveroyale_cptable = iceboat_2_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_3_y moveroyale_cptable = iceboat_2_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_3_z moveroyale_cptable = iceboat_2_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_3_angle1 moveroyale_cptable = iceboat_2_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_e_4_3_angle2 moveroyale_cptable = iceboat_2_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_2_e_4_1_x moveroyale_cptable 30000
+scoreboard players add iceboat_2_e_4_2_x moveroyale_cptable 30000
+scoreboard players add iceboat_2_e_4_3_x moveroyale_cptable 30000
+### hard
+scoreboard players set iceboat_2_h_1_1_x moveroyale_cptable 2339970
+scoreboard players set iceboat_2_h_1_1_y moveroyale_cptable 1000
+scoreboard players set iceboat_2_h_1_1_z moveroyale_cptable 2199950
+scoreboard players set iceboat_2_h_1_1_angle1 moveroyale_cptable 0
+scoreboard players set iceboat_2_h_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_2_h_1_2_x moveroyale_cptable 2339010
+scoreboard players set iceboat_2_h_1_2_y moveroyale_cptable 1010
+scoreboard players set iceboat_2_h_1_2_z moveroyale_cptable 2202110
+scoreboard players set iceboat_2_h_1_2_angle1 moveroyale_cptable 900
+scoreboard players set iceboat_2_h_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_2_h_1_3_x moveroyale_cptable 2339050
+scoreboard players set iceboat_2_h_1_3_y moveroyale_cptable 1040
+scoreboard players set iceboat_2_h_1_3_z moveroyale_cptable 2200640
+scoreboard players set iceboat_2_h_1_3_angle1 moveroyale_cptable 1800
+scoreboard players set iceboat_2_h_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players operation iceboat_2_h_2_1_x moveroyale_cptable = iceboat_2_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_1_y moveroyale_cptable = iceboat_2_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_1_z moveroyale_cptable = iceboat_2_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_1_angle1 moveroyale_cptable = iceboat_2_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_1_angle2 moveroyale_cptable = iceboat_2_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_h_2_2_x moveroyale_cptable = iceboat_2_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_2_y moveroyale_cptable = iceboat_2_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_2_z moveroyale_cptable = iceboat_2_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_2_angle1 moveroyale_cptable = iceboat_2_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_2_angle2 moveroyale_cptable = iceboat_2_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_h_2_3_x moveroyale_cptable = iceboat_2_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_3_y moveroyale_cptable = iceboat_2_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_3_z moveroyale_cptable = iceboat_2_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_3_angle1 moveroyale_cptable = iceboat_2_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_2_3_angle2 moveroyale_cptable = iceboat_2_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_2_h_2_1_x moveroyale_cptable 10000
+scoreboard players add iceboat_2_h_2_2_x moveroyale_cptable 10000
+scoreboard players add iceboat_2_h_2_3_x moveroyale_cptable 10000
+
+scoreboard players operation iceboat_2_h_3_1_x moveroyale_cptable = iceboat_2_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_1_y moveroyale_cptable = iceboat_2_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_1_z moveroyale_cptable = iceboat_2_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_1_angle1 moveroyale_cptable = iceboat_2_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_1_angle2 moveroyale_cptable = iceboat_2_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_h_3_2_x moveroyale_cptable = iceboat_2_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_2_y moveroyale_cptable = iceboat_2_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_2_z moveroyale_cptable = iceboat_2_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_2_angle1 moveroyale_cptable = iceboat_2_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_2_angle2 moveroyale_cptable = iceboat_2_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_h_3_3_x moveroyale_cptable = iceboat_2_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_3_y moveroyale_cptable = iceboat_2_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_3_z moveroyale_cptable = iceboat_2_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_3_angle1 moveroyale_cptable = iceboat_2_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_3_3_angle2 moveroyale_cptable = iceboat_2_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_2_h_3_1_x moveroyale_cptable 20000
+scoreboard players add iceboat_2_h_3_2_x moveroyale_cptable 20000
+scoreboard players add iceboat_2_h_3_3_x moveroyale_cptable 20000
+
+scoreboard players operation iceboat_2_h_4_1_x moveroyale_cptable = iceboat_2_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_1_y moveroyale_cptable = iceboat_2_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_1_z moveroyale_cptable = iceboat_2_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_1_angle1 moveroyale_cptable = iceboat_2_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_1_angle2 moveroyale_cptable = iceboat_2_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_h_4_2_x moveroyale_cptable = iceboat_2_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_2_y moveroyale_cptable = iceboat_2_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_2_z moveroyale_cptable = iceboat_2_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_2_angle1 moveroyale_cptable = iceboat_2_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_2_angle2 moveroyale_cptable = iceboat_2_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_2_h_4_3_x moveroyale_cptable = iceboat_2_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_3_y moveroyale_cptable = iceboat_2_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_3_z moveroyale_cptable = iceboat_2_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_3_angle1 moveroyale_cptable = iceboat_2_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_2_h_4_3_angle2 moveroyale_cptable = iceboat_2_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_2_h_4_1_x moveroyale_cptable 30000
+scoreboard players add iceboat_2_h_4_2_x moveroyale_cptable 30000
+scoreboard players add iceboat_2_h_4_3_x moveroyale_cptable 30000
+## Arena 3
+scoreboard players set iceboat_3_e_1_1_x moveroyale_cptable 2400000
+scoreboard players set iceboat_3_e_1_1_y moveroyale_cptable 1000
+scoreboard players set iceboat_3_e_1_1_z moveroyale_cptable 2199940
+scoreboard players set iceboat_3_e_1_1_angle1 moveroyale_cptable 0
+scoreboard players set iceboat_3_e_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_3_e_1_2_x moveroyale_cptable 2400000
+scoreboard players set iceboat_3_e_1_2_y moveroyale_cptable 1000
+scoreboard players set iceboat_3_e_1_2_z moveroyale_cptable 2201600
+scoreboard players set iceboat_3_e_1_2_angle1 moveroyale_cptable -300
+scoreboard players set iceboat_3_e_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_3_e_1_3_x moveroyale_cptable 2401570
+scoreboard players set iceboat_3_e_1_3_y moveroyale_cptable 880
+scoreboard players set iceboat_3_e_1_3_z moveroyale_cptable 2203320
+scoreboard players set iceboat_3_e_1_3_angle1 moveroyale_cptable -1260
+scoreboard players set iceboat_3_e_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players operation iceboat_3_e_2_1_x moveroyale_cptable = iceboat_3_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_1_y moveroyale_cptable = iceboat_3_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_1_z moveroyale_cptable = iceboat_3_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_1_angle1 moveroyale_cptable = iceboat_3_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_1_angle2 moveroyale_cptable = iceboat_3_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_e_2_2_x moveroyale_cptable = iceboat_3_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_2_y moveroyale_cptable = iceboat_3_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_2_z moveroyale_cptable = iceboat_3_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_2_angle1 moveroyale_cptable = iceboat_3_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_2_angle2 moveroyale_cptable = iceboat_3_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_e_2_3_x moveroyale_cptable = iceboat_3_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_3_y moveroyale_cptable = iceboat_3_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_3_z moveroyale_cptable = iceboat_3_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_3_angle1 moveroyale_cptable = iceboat_3_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_2_3_angle2 moveroyale_cptable = iceboat_3_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_3_e_2_1_x moveroyale_cptable 10000
+scoreboard players add iceboat_3_e_2_2_x moveroyale_cptable 10000
+scoreboard players add iceboat_3_e_2_3_x moveroyale_cptable 10000
+
+scoreboard players operation iceboat_3_e_3_1_x moveroyale_cptable = iceboat_3_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_1_y moveroyale_cptable = iceboat_3_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_1_z moveroyale_cptable = iceboat_3_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_1_angle1 moveroyale_cptable = iceboat_3_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_1_angle2 moveroyale_cptable = iceboat_3_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_e_3_2_x moveroyale_cptable = iceboat_3_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_2_y moveroyale_cptable = iceboat_3_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_2_z moveroyale_cptable = iceboat_3_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_2_angle1 moveroyale_cptable = iceboat_3_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_2_angle2 moveroyale_cptable = iceboat_3_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_e_3_3_x moveroyale_cptable = iceboat_3_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_3_y moveroyale_cptable = iceboat_3_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_3_z moveroyale_cptable = iceboat_3_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_3_angle1 moveroyale_cptable = iceboat_3_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_3_3_angle2 moveroyale_cptable = iceboat_3_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_3_e_3_1_x moveroyale_cptable 20000
+scoreboard players add iceboat_3_e_3_2_x moveroyale_cptable 20000
+scoreboard players add iceboat_3_e_3_3_x moveroyale_cptable 20000
+
+scoreboard players operation iceboat_3_e_4_1_x moveroyale_cptable = iceboat_3_e_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_1_y moveroyale_cptable = iceboat_3_e_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_1_z moveroyale_cptable = iceboat_3_e_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_1_angle1 moveroyale_cptable = iceboat_3_e_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_1_angle2 moveroyale_cptable = iceboat_3_e_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_e_4_2_x moveroyale_cptable = iceboat_3_e_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_2_y moveroyale_cptable = iceboat_3_e_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_2_z moveroyale_cptable = iceboat_3_e_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_2_angle1 moveroyale_cptable = iceboat_3_e_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_2_angle2 moveroyale_cptable = iceboat_3_e_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_e_4_3_x moveroyale_cptable = iceboat_3_e_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_3_y moveroyale_cptable = iceboat_3_e_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_3_z moveroyale_cptable = iceboat_3_e_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_3_angle1 moveroyale_cptable = iceboat_3_e_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_e_4_3_angle2 moveroyale_cptable = iceboat_3_e_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_3_e_4_1_x moveroyale_cptable 30000
+scoreboard players add iceboat_3_e_4_2_x moveroyale_cptable 30000
+scoreboard players add iceboat_3_e_4_3_x moveroyale_cptable 30000
+### hard
+scoreboard players set iceboat_3_h_1_1_x moveroyale_cptable 2440000
+scoreboard players set iceboat_3_h_1_1_y moveroyale_cptable 1000
+scoreboard players set iceboat_3_h_1_1_z moveroyale_cptable 2199940
+scoreboard players set iceboat_3_h_1_1_angle1 moveroyale_cptable 0
+scoreboard players set iceboat_3_h_1_1_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_3_h_1_2_x moveroyale_cptable 2440000
+scoreboard players set iceboat_3_h_1_2_y moveroyale_cptable 1000
+scoreboard players set iceboat_3_h_1_2_z moveroyale_cptable 2201600
+scoreboard players set iceboat_3_h_1_2_angle1 moveroyale_cptable -300
+scoreboard players set iceboat_3_h_1_2_angle2 moveroyale_cptable 0
+
+scoreboard players set iceboat_3_h_1_3_x moveroyale_cptable 2441570
+scoreboard players set iceboat_3_h_1_3_y moveroyale_cptable 880
+scoreboard players set iceboat_3_h_1_3_z moveroyale_cptable 2203320
+scoreboard players set iceboat_3_h_1_3_angle1 moveroyale_cptable -1260
+scoreboard players set iceboat_3_h_1_3_angle2 moveroyale_cptable 0
+
+scoreboard players operation iceboat_3_h_2_1_x moveroyale_cptable = iceboat_3_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_1_y moveroyale_cptable = iceboat_3_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_1_z moveroyale_cptable = iceboat_3_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_1_angle1 moveroyale_cptable = iceboat_3_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_1_angle2 moveroyale_cptable = iceboat_3_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_h_2_2_x moveroyale_cptable = iceboat_3_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_2_y moveroyale_cptable = iceboat_3_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_2_z moveroyale_cptable = iceboat_3_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_2_angle1 moveroyale_cptable = iceboat_3_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_2_angle2 moveroyale_cptable = iceboat_3_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_h_2_3_x moveroyale_cptable = iceboat_3_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_3_y moveroyale_cptable = iceboat_3_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_3_z moveroyale_cptable = iceboat_3_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_3_angle1 moveroyale_cptable = iceboat_3_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_2_3_angle2 moveroyale_cptable = iceboat_3_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_3_h_2_1_x moveroyale_cptable 10000
+scoreboard players add iceboat_3_h_2_2_x moveroyale_cptable 10000
+scoreboard players add iceboat_3_h_2_3_x moveroyale_cptable 10000
+
+scoreboard players operation iceboat_3_h_3_1_x moveroyale_cptable = iceboat_3_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_1_y moveroyale_cptable = iceboat_3_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_1_z moveroyale_cptable = iceboat_3_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_1_angle1 moveroyale_cptable = iceboat_3_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_1_angle2 moveroyale_cptable = iceboat_3_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_h_3_2_x moveroyale_cptable = iceboat_3_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_2_y moveroyale_cptable = iceboat_3_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_2_z moveroyale_cptable = iceboat_3_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_2_angle1 moveroyale_cptable = iceboat_3_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_2_angle2 moveroyale_cptable = iceboat_3_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_h_3_3_x moveroyale_cptable = iceboat_3_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_3_y moveroyale_cptable = iceboat_3_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_3_z moveroyale_cptable = iceboat_3_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_3_angle1 moveroyale_cptable = iceboat_3_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_3_3_angle2 moveroyale_cptable = iceboat_3_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_3_h_3_1_x moveroyale_cptable 20000
+scoreboard players add iceboat_3_h_3_2_x moveroyale_cptable 20000
+scoreboard players add iceboat_3_h_3_3_x moveroyale_cptable 20000
+
+scoreboard players operation iceboat_3_h_4_1_x moveroyale_cptable = iceboat_3_h_1_1_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_1_y moveroyale_cptable = iceboat_3_h_1_1_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_1_z moveroyale_cptable = iceboat_3_h_1_1_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_1_angle1 moveroyale_cptable = iceboat_3_h_1_1_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_1_angle2 moveroyale_cptable = iceboat_3_h_1_1_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_h_4_2_x moveroyale_cptable = iceboat_3_h_1_2_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_2_y moveroyale_cptable = iceboat_3_h_1_2_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_2_z moveroyale_cptable = iceboat_3_h_1_2_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_2_angle1 moveroyale_cptable = iceboat_3_h_1_2_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_2_angle2 moveroyale_cptable = iceboat_3_h_1_2_angle2 moveroyale_cptable
+
+scoreboard players operation iceboat_3_h_4_3_x moveroyale_cptable = iceboat_3_h_1_3_x moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_3_y moveroyale_cptable = iceboat_3_h_1_3_y moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_3_z moveroyale_cptable = iceboat_3_h_1_3_z moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_3_angle1 moveroyale_cptable = iceboat_3_h_1_3_angle1 moveroyale_cptable
+scoreboard players operation iceboat_3_h_4_3_angle2 moveroyale_cptable = iceboat_3_h_1_3_angle2 moveroyale_cptable
+
+scoreboard players add iceboat_3_h_4_1_x moveroyale_cptable 30000
+scoreboard players add iceboat_3_h_4_2_x moveroyale_cptable 30000
+scoreboard players add iceboat_3_h_4_3_x moveroyale_cptable 30000
+## Arena 4
+
+
+# TRIDENT (trident_[arena_no]_[difficulty]_[checkpoint_no]_[value_type])
+scoreboard players set trident_low_limit moveroyale_cptable 65
+## Arena 1
+scoreboard players set trident_1_h_1_x moveroyale_cptable 2069920
+scoreboard players set trident_1_h_1_y moveroyale_cptable 1000
+scoreboard players set trident_1_h_1_z moveroyale_cptable 2070000
+scoreboard players set trident_1_h_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_1_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_1_h_2_x moveroyale_cptable 2068490
+scoreboard players set trident_1_h_2_y moveroyale_cptable 1100
+scoreboard players set trident_1_h_2_z moveroyale_cptable 2070000
+scoreboard players set trident_1_h_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_1_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_1_h_3_x moveroyale_cptable 2067370
+scoreboard players set trident_1_h_3_y moveroyale_cptable 1200
+scoreboard players set trident_1_h_3_z moveroyale_cptable 2070000
+scoreboard players set trident_1_h_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_1_h_3_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_1_e_1_x moveroyale_cptable 2079920
+scoreboard players set trident_1_e_1_y moveroyale_cptable 1000
+scoreboard players set trident_1_e_1_z moveroyale_cptable 2070000
+scoreboard players set trident_1_e_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_1_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_1_e_2_x moveroyale_cptable 2078490
+scoreboard players set trident_1_e_2_y moveroyale_cptable 1100
+scoreboard players set trident_1_e_2_z moveroyale_cptable 2070000
+scoreboard players set trident_1_e_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_1_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_1_e_3_x moveroyale_cptable 2077370
+scoreboard players set trident_1_e_3_y moveroyale_cptable 1200
+scoreboard players set trident_1_e_3_z moveroyale_cptable 2070000
+scoreboard players set trident_1_e_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_1_e_3_angle2 moveroyale_cptable 0
+## Arena 2
+scoreboard players set trident_2_h_1_x moveroyale_cptable 2080000
+scoreboard players set trident_2_h_1_y moveroyale_cptable 1000
+scoreboard players set trident_2_h_1_z moveroyale_cptable 2080000
+scoreboard players set trident_2_h_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_2_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_2_h_2_x moveroyale_cptable 2078810
+scoreboard players set trident_2_h_2_y moveroyale_cptable 1130
+scoreboard players set trident_2_h_2_z moveroyale_cptable 2080000
+scoreboard players set trident_2_h_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_2_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_2_h_3_x moveroyale_cptable 2078050
+scoreboard players set trident_2_h_3_y moveroyale_cptable 1180
+scoreboard players set trident_2_h_3_z moveroyale_cptable 2080000
+scoreboard players set trident_2_h_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_2_h_3_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_2_e_1_x moveroyale_cptable 2090000
+scoreboard players set trident_2_e_1_y moveroyale_cptable 1000
+scoreboard players set trident_2_e_1_z moveroyale_cptable 2080000
+scoreboard players set trident_2_e_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_2_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_2_e_2_x moveroyale_cptable 2088810
+scoreboard players set trident_2_e_2_y moveroyale_cptable 1130
+scoreboard players set trident_2_e_2_z moveroyale_cptable 2080000
+scoreboard players set trident_2_e_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_2_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_2_e_3_x moveroyale_cptable 2088050
+scoreboard players set trident_2_e_3_y moveroyale_cptable 1180
+scoreboard players set trident_2_e_3_z moveroyale_cptable 2080000
+scoreboard players set trident_2_e_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_2_e_3_angle2 moveroyale_cptable 0
+
+## Arena 3
+scoreboard players set trident_3_h_1_x moveroyale_cptable 2090000
+scoreboard players set trident_3_h_1_y moveroyale_cptable 1000
+scoreboard players set trident_3_h_1_z moveroyale_cptable 2090000
+scoreboard players set trident_3_h_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_3_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_3_h_2_x moveroyale_cptable 2089180
+scoreboard players set trident_3_h_2_y moveroyale_cptable 1020
+scoreboard players set trident_3_h_2_z moveroyale_cptable 2090010
+scoreboard players set trident_3_h_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_3_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_3_h_3_x moveroyale_cptable 2088590
+scoreboard players set trident_3_h_3_y moveroyale_cptable 1640
+scoreboard players set trident_3_h_3_z moveroyale_cptable 2090010
+scoreboard players set trident_3_h_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_3_h_3_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_3_e_1_x moveroyale_cptable 2100000
+scoreboard players set trident_3_e_1_y moveroyale_cptable 1000
+scoreboard players set trident_3_e_1_z moveroyale_cptable 2090000
+scoreboard players set trident_3_e_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_3_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_3_e_2_x moveroyale_cptable 2099180
+scoreboard players set trident_3_e_2_y moveroyale_cptable 1020
+scoreboard players set trident_3_e_2_z moveroyale_cptable 2090010
+scoreboard players set trident_3_e_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_3_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_3_e_3_x moveroyale_cptable 2098590
+scoreboard players set trident_3_e_3_y moveroyale_cptable 1640
+scoreboard players set trident_3_e_3_z moveroyale_cptable 2090010
+scoreboard players set trident_3_e_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_3_e_3_angle2 moveroyale_cptable 0
+
+## Arena 4
+scoreboard players set trident_4_h_1_x moveroyale_cptable 2099970
+scoreboard players set trident_4_h_1_y moveroyale_cptable 1000
+scoreboard players set trident_4_h_1_z moveroyale_cptable 2100000
+scoreboard players set trident_4_h_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_4_h_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_4_h_2_x moveroyale_cptable 2099280
+scoreboard players set trident_4_h_2_y moveroyale_cptable 1430
+scoreboard players set trident_4_h_2_z moveroyale_cptable 2100000
+scoreboard players set trident_4_h_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_4_h_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_4_h_3_x moveroyale_cptable 2098130
+scoreboard players set trident_4_h_3_y moveroyale_cptable 2010
+scoreboard players set trident_4_h_3_z moveroyale_cptable 2100000
+scoreboard players set trident_4_h_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_4_h_3_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_4_e_1_x moveroyale_cptable 2109970
+scoreboard players set trident_4_e_1_y moveroyale_cptable 1000
+scoreboard players set trident_4_e_1_z moveroyale_cptable 2100000
+scoreboard players set trident_4_e_1_angle1 moveroyale_cptable 900
+scoreboard players set trident_4_e_1_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_4_e_2_x moveroyale_cptable 2109280
+scoreboard players set trident_4_e_2_y moveroyale_cptable 1430
+scoreboard players set trident_4_e_2_z moveroyale_cptable 2100000
+scoreboard players set trident_4_e_2_angle1 moveroyale_cptable 900
+scoreboard players set trident_4_e_2_angle2 moveroyale_cptable 0
+
+scoreboard players set trident_4_e_3_x moveroyale_cptable 2108130
+scoreboard players set trident_4_e_3_y moveroyale_cptable 2010
+scoreboard players set trident_4_e_3_z moveroyale_cptable 2100000
+scoreboard players set trident_4_e_3_angle1 moveroyale_cptable 900
+scoreboard players set trident_4_e_3_angle2 moveroyale_cptable 0
+# Complete
+tellraw @s ["§aUpdate complete."]

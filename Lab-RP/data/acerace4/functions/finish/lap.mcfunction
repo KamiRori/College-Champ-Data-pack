@@ -36,7 +36,7 @@ tag @s remove me
 execute if score @s ar_laptime < 1 ar_bestlaptime run function acerace4:bestlap/1
 execute if score @s ar_laptime < 2 ar_bestlaptime if score @s ar_laptime > 1 ar_bestlaptime run function acerace4:bestlap/2
 execute if score @s ar_laptime < 3 ar_bestlaptime if score @s ar_laptime > 2 ar_bestlaptime run function acerace4:bestlap/3
-execute if score @s ar_laptime < 4 ar_bestlaptime if score @s ar_laptime > 3 ar_bestlaptime run function acerace4:bestlap/3
+execute if score @s ar_laptime < 4 ar_bestlaptime if score @s ar_laptime > 3 ar_bestlaptime run function acerace4:bestlap/4
 execute if score @s ar_laptime < 5 ar_bestlaptime if score @s ar_laptime > 4 ar_bestlaptime run function acerace4:bestlap/5
 
 # Tied?
@@ -59,3 +59,8 @@ scoreboard players operation @s ar_indvscore += 完成一圈 acerace_stats
 tag @s remove ar_finishlap
 scoreboard players set @s ar_cp 0
 scoreboard players set @s ar_laptime 0
+
+# Modifier: Wildcard
+execute if score modifier_wildcard ar_game matches 1 run function acerace4:modifiers/wildcard/pickrandom
+execute if entity @s[tag=ar_wildcard_lapSpdBonus] run function acerace4:modifiers/wildcard/movespeed_modify/lapspd20clear
+execute if entity @s[tag=ar_wildcard_lapSpdDebuff8] run function acerace4:modifiers/wildcard/movespeed_modify/lapdebuff8clear

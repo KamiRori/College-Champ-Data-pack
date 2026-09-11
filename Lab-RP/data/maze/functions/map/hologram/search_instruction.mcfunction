@@ -1,0 +1,2 @@
+
+summon text_display ~ ~1.25 ~0.249 {Tags:[maze_text_display,t_search_instru],billboard:"fixed",alignment:"center",Rotation:[180f,0f],see_through:false,shadow:false,text:'"§6§l搜索挑战\\n§f在规定时间内使用§6镐子§f挖掘场地内\\n§c数量与种类§f均完全符合要求的方块\\n\\n§7§o失败条件: 超时、挖掘错误或多余的方块"',line_width:350}

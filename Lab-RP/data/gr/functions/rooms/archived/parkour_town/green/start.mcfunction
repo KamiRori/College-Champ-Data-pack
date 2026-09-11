@@ -9,6 +9,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_greenanchor] at @s run sum
 
 kill @e[type=armor_stand,tag=gr_green,tag=divider]
 execute as @a[team=green] at @s run spawnpoint
+execute as @a[team=green] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add green gr_teamphase 1
 

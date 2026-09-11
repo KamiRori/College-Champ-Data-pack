@@ -11,5 +11,5 @@ execute if score timer megabolt_bp matches 40 run title @a title "§b即将开�
 execute if score timer megabolt_bp matches 20 run function dodgebolt:timeannounce/1
 execute if score timer megabolt_bp matches 20 run title @a title "§b即将开始"
 
-execute if score timer megabolt_bp matches ..0 run function dodgebolt:megabolt_bp/phases/next/2 
+execute if score timer megabolt_bp matches ..0 run function dodgebolt:megabolt_bp/phases/next/2
 execute if score phase megabolt_bp matches 2 run schedule function dodgebolt:megabolt_bp/phases/loop/2 1t

@@ -1,0 +1,1 @@
+execute as @e[type=block_display,tag=fatesplate] run data merge entity @s {block_state:{Name:"note_block",Properties:{instrument:"custom_head",note:"24",powered:"false"}}}

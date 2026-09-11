@@ -26,4 +26,4 @@ function battlebox:statusbar/startinit
 execute as @e[type=marker,tag=bb_centeranchor,tag=!center_locked] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 white_wool
 execute as @e[type=marker,tag=battleboxanchor,tag=spawns] at @s run fill ~-2 ~ ~3 ~3 ~3 ~-3 air replace gray_stained_glass
 # Glowing
-effect give @a[team=!spec] glowing infinite 0 true
+#effect give @a[team=!spec] glowing infinite 0 true

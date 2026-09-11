@@ -6,7 +6,7 @@ execute if score @s ar_laps matches 2..4 run function acerace4:checkpoint/disp/3
 # clear @s trident
 # effect give @s dolphins_grace infinite 0 true
 
-clear @s trident 
+clear @s trident
 title @s actionbar ["",{"text": "-","color": "red"}," 䅃",{"text": " 三叉戟","color": "red"}]
 scoreboard players set @s ar_actionbarcd 30
 

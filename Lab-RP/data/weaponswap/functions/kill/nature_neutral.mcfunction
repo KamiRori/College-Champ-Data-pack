@@ -1,0 +1,1 @@
+tellraw @s ["",{"selector":"@a[tag=step_kill_judge]"},"死了。"]

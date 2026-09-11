@@ -1,0 +1,3 @@
+
+function moveroyale:playing_copy/init_high
+function moveroyale:playing_copy/init_low

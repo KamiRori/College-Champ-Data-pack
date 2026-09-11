@@ -1,0 +1,1 @@
+place template ws:wasteland 33893 0 33901

@@ -29,18 +29,10 @@ tellraw @a "§6游戏结算即将开始……"
 tellraw @a ""
 # Start score calc
 function gr:scoreboard/end
-schedule function gr:scoring/1 3s
-schedule function gr:scoring/2 8s
-schedule function gr:scoring/3 13s
-schedule function gr:scoring/4 18s
-schedule function gr:scoring/5 23s
-schedule function gr:scoring/6 28s
-schedule function gr:scoring/7 33s
-schedule function gr:scoring/8 38s
-schedule function gr:scoring/course 43s
-schedule function gr:scoring/wrapup 44s
-schedule function utils:text/gamescore 48s
-schedule function utils:text/eventstandings 56s
+execute unless score modifier_cross gr_game matches 1 run function gr:scoring/schedule_normal
+execute if score modifier_cross gr_game matches 1 run function gr:scoring/schedule_even
+
+
 # Clears all team's progress
 scoreboard players set red gr_teamphase 999
 scoreboard players set blue gr_teamphase 999

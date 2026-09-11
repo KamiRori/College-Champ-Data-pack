@@ -10,6 +10,10 @@ execute as @a[team=red] at @s run playsound gr.roomcomplete record @s
 scoreboard players operation @e[type=area_effect_cloud,tag=gr_general,tag=gr_redany] gr_room6time = red gr_currenttime
 # Trim
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run fill ~1 111 ~-1 ~31 111 ~31 red_terracotta replace smooth_quartz
+
+# Remove creeper
+kill @e[type=creeper,tag=red,tag=gr_room]
+
 # Calculate Position, and update scoreboard
 scoreboard players add red gr_completeroom 1
 scoreboard players add 6 gr_indvroom 1
@@ -18,8 +22,8 @@ scoreboard players operation red gr_currentpos = 6 gr_indvroom
 function gr:scoreboard/calc
 
 # Announce position
-tellraw @a[team=!red] ["",{"translate":"team.red"},"§7第",{"score":{"name": "6","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§dDig Site","§e]"]
-tellraw @a[team=red] ["","§7你","§7第",{"score":{"name": "6","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§dDig Site","§e]"]
+tellraw @a[team=!red] ["",{"translate":"team.red"},"§7第",{"score":{"name": "6","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§2Creeper Guide","§e]"]
+tellraw @a[team=red] ["","§7你","§7第",{"score":{"name": "6","objective": "gr_indvroom"},"color": "aqua"},"§7个完成了房间","§e[","§2Creeper Guide","§e]"]
 # Initiate next room
 scoreboard players add red gr_teamphase 1
 execute as @e[type=minecraft:area_effect_cloud,tag=gr_redanchor] at @s run tp @s ~-47 ~ ~

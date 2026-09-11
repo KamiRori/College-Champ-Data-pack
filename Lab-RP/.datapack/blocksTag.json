@@ -1,1 +1,1 @@
-{}
+{"sg":{"$tags":["weapon_breakables"]},"minecraft":{"$tags":["moveroyale_obstacles","except_light_blue_wool","all_breakable_blocks","all_blocks"]},"meltdown":{"$tags":["valid_starting_blocks","non_solid","meltable_blocks","invalid_spread_blocks","door_material","center_melt_ignored"]},"railroadrush":{"$tags":["terracotta","destructable_drop","destructables_always","destructables","concrete","allow_mining"]},"sot":{"$tags":["breakables_notool"]}}

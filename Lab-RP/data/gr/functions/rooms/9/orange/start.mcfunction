@@ -9,11 +9,12 @@ execute as @e[type=minecraft:area_effect_cloud,tag=gr_orangeanchor] at @s run su
 
 kill @e[type=armor_stand,tag=gr_orange,tag=divider]
 execute as @a[team=orange] at @s run spawnpoint
+execute as @a[team=orange] at @s run kill @e[type=item,distance=0..3]
 # Add a team phase
 scoreboard players add orange gr_teamphase 1
 
 # Modify scoreboard
-scoreboard players display name var_room_name gr_orangesb "§a§l当前房间: §rConveyors"
+scoreboard players display name var_room_name gr_orangesb "§a§l当前房间: §rWipeout"
 # Play sound and title
 execute as @a[team=orange] at @s run playsound minecraft:block.note_block.pling block @s ~ ~ ~ 1.5
 title @a[team=orange] times 20 40 20

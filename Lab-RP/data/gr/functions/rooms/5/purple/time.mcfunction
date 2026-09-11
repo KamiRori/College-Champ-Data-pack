@@ -9,5 +9,5 @@ scoreboard players operation purple gr_currentmin /= 6000 math
 scoreboard players operation purple gr_currentsec /= 100 math
 scoreboard players operation purple gr_currentsec %= 60 math
 # 显示房间目标和当前用时
-execute if score purple gr_currentsec matches 0..9 run title @a[team=purple] actionbar ["",{"score":{"name": "purple","objective": "gr_currentmin"}},":","0",{"score":{"name": "purple","objective": "gr_currentsec"}}," | ","[§e!§r]"," 在爬行状态下穿越迷宫，点亮所有红石灯。"]
-execute if score purple gr_currentsec matches 10..59 run title @a[team=purple] actionbar ["",{"score":{"name": "purple","objective": "gr_currentmin"}},":","",{"score":{"name": "purple","objective": "gr_currentsec"}}," | ","[§e!§r]"," 在爬行状态下穿越迷宫，点亮所有红石灯。"]
+execute if score purple gr_currentsec matches 0..9 run title @a[team=purple] actionbar ["",{"score":{"name": "purple","objective": "gr_currentmin"}},":","0",{"score":{"name": "purple","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击败所有怪物。"]
+execute if score purple gr_currentsec matches 10..59 run title @a[team=purple] actionbar ["",{"score":{"name": "purple","objective": "gr_currentmin"}},":","",{"score":{"name": "purple","objective": "gr_currentsec"}}," | ","[§e!§r]"," 击败所有怪物。"]

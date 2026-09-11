@@ -11,7 +11,7 @@ scoreboard objectives setdisplay sidebar.team.gold
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay list
 
-scoreboard objectives modify tourney_sb displayname ["","§e§l高校小游戏联赛 Chaos"]
+scoreboard objectives modify tourney_sb displayname ["","§e§l高校小游戏联赛 NY2"]
 scoreboard objectives modify tourney_sb numberformat fixed " "
 team modify placeholder_0 suffix "§b上海交通大学Minecraft社"
 team modify placeholder_1 suffix ""
@@ -30,7 +30,7 @@ team modify placeholder_2 prefix [{"text": "玩家: ","color":"green","bold":tru
 team modify placeholder_3 prefix ""
 team modify placeholder_4 prefix ""
 team modify placeholder_5 prefix ["",{"text": "活动开始: ","bold": true,"color":"aqua"}]
-team modify placeholder_6 prefix ["",{"text": "Map Ver: 0.27.C","color":"gray"}]
+team modify placeholder_6 prefix ["",{"text": "Map Ver: 0.29.0","color":"gray"}]
 team modify placeholder_7 prefix ""
 team modify placeholder_8 prefix ""
 team modify placeholder_9 prefix ""

@@ -17,6 +17,6 @@ execute if score 5 tourney_games matches 14 run function decisiondome:choosegame
 execute if score 5 tourney_games matches 15 run function decisiondome:choosegame/game/15
 execute if score 5 tourney_games matches 16 run function decisiondome:choosegame/game/16
 execute if score 5 tourney_games matches 17 run function decisiondome:choosegame/game/17
-execute if score 6 tourney_games matches 18 run function decisiondome:choosegame/game/18
+execute if score 5 tourney_games matches 18 run function decisiondome:choosegame/game/18
 
 scoreboard players set last_sector tourney_stats 5

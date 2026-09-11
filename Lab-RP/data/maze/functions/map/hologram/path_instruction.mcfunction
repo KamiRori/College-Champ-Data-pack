@@ -1,0 +1,2 @@
+
+summon text_display ~ ~1.25 ~0.249 {Tags:[maze_text_display,t_path_instru],billboard:"fixed",alignment:"center",Rotation:[180f,0f],see_through:false,shadow:false,text:'"§d§l记忆挑战\\n§f记忆所给盘面并沿§a绿色路径§f到达另一边。\\n可以通过返回§a起始点§f以\\n§b再次查看盘面\\n\\n§7§o失败条件: 踏上错误的格子"',line_width:350}

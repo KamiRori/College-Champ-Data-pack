@@ -1,0 +1,2 @@
+
+summon text_display ~ ~1.25 ~0.249 {Tags:[maze_text_display,t_pve_instru],billboard:"fixed",alignment:"center",Rotation:[180f,0f],see_through:false,shadow:false,text:'"§c§l打怪挑战\\n§f击败房间内生成的所有怪物\\n以完成挑战。\\n\\n§7§o失败条件: 超时或生命值清零"',line_width:350}

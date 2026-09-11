@@ -1,0 +1,2 @@
+
+summon text_display ~ ~1.25 ~0.249 {Tags:[maze_text_display,t_parkour_instru],billboard:"fixed",alignment:"center",Rotation:[180f,0f],see_through:false,shadow:false,text:'"§9§l跑酷挑战\\n§f跑酷到达另一边以完成挑战。\\n\\n§7§o失败条件: 超时或生命值清零"',line_width:350}

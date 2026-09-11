@@ -14,7 +14,7 @@ x=1: TGTTOS x=2: RSR x=3: ? sign
 {2}./game6 的两个函数
 
 游戏ID
-1 Parkour Tag (PKT)
+1 Parkour Tag (PKT) Tag Rush （共用ID）
 2 Battle Box (BB)
 3 Sands of Time (SOT)
 4 Parkour Warrior (PKW2)
@@ -29,6 +29,7 @@ x=1: TGTTOS x=2: RSR x=3: ? sign
 13 Survival Games (SG)
 14 Meltdown (MD)
 17 RRR
+18 Move Royale
 --------------
 15 BBF
 16 Skyblockle

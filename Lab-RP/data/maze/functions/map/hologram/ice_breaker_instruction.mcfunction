@@ -1,0 +1,2 @@
+
+summon text_display ~ ~1.25 ~0.249 {Tags:[maze_text_display,t_ib_instru],billboard:"fixed",alignment:"center",Rotation:[180f,0f],see_through:false,shadow:false,text:'"§b§l破冰挑战\\n§f在规定时间内使用§6镐子§f和所持有的§b冰块\\n§f将§b左边§f的冰雕复制到§6右边§f\\n\\n§7§o失败条件: 用尽冰块或时间"',line_width:350}

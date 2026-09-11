@@ -1,0 +1,1 @@
+give @s phantom_membrane{CustomModelData:200001,display:{Name:'"§r§6领地卡"',Lore:['"§r§b房间编号§f101§b的领地卡"','"§r§e将本卡带回本队基地以建立对领地的占领。"','"§r§7使用回城卡或换位卡时消失！"','"§r§c丢弃后消失"']}} 1

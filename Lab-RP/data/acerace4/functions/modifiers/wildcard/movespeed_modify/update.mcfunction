@@ -1,0 +1,3 @@
+
+
+$attribute @s generic.movement_speed base set $(newSpd)

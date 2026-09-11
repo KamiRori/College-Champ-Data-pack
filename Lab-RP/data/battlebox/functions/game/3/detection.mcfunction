@@ -2,40 +2,40 @@
 function battlebox:blockscalc
 
 # Arena 1
-execute if score red bb_blockscalc matches 9 run function battlebox:general/win/red 
+execute if score red bb_blockscalc matches 9 run function battlebox:general/win/red
 execute if score red bb_blockscalc matches 9 run function battlebox:general/lose/yellow
 execute if score red bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_redanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 red_concrete
 
-execute if score yellow bb_blockscalc matches 9 run function battlebox:general/win/yellow 
+execute if score yellow bb_blockscalc matches 9 run function battlebox:general/win/yellow
 execute if score yellow bb_blockscalc matches 9 run function battlebox:general/lose/red
 execute if score yellow bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_yellowanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 yellow_concrete
 
 
 # Arena 2
-execute if score blue bb_blockscalc matches 9 run function battlebox:general/win/blue 
+execute if score blue bb_blockscalc matches 9 run function battlebox:general/win/blue
 execute if score blue bb_blockscalc matches 9 run function battlebox:general/lose/green
 execute if score blue bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_blueanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 blue_concrete
 
-execute if score green bb_blockscalc matches 9 run function battlebox:general/win/green 
+execute if score green bb_blockscalc matches 9 run function battlebox:general/win/green
 execute if score green bb_blockscalc matches 9 run function battlebox:general/lose/blue
 execute if score green bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_greenanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 green_concrete
 
 
 # Arena 3
-execute if score cyan bb_blockscalc matches 9 run function battlebox:general/win/cyan 
+execute if score cyan bb_blockscalc matches 9 run function battlebox:general/win/cyan
 execute if score cyan bb_blockscalc matches 9 run function battlebox:general/lose/purple
 execute if score cyan bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_cyananchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 cyan_concrete
 
-execute if score purple bb_blockscalc matches 9 run function battlebox:general/win/purple 
+execute if score purple bb_blockscalc matches 9 run function battlebox:general/win/purple
 execute if score purple bb_blockscalc matches 9 run function battlebox:general/lose/cyan
 execute if score purple bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_purpleanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 purple_concrete
 
 # Arena 4
-execute if score orange bb_blockscalc matches 9 run function battlebox:general/win/orange 
+execute if score orange bb_blockscalc matches 9 run function battlebox:general/win/orange
 execute if score orange bb_blockscalc matches 9 run function battlebox:general/lose/pink
 execute if score orange bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_orangeanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 orange_concrete
 
-execute if score pink bb_blockscalc matches 9 run function battlebox:general/win/pink 
+execute if score pink bb_blockscalc matches 9 run function battlebox:general/win/pink
 execute if score pink bb_blockscalc matches 9 run function battlebox:general/lose/orange
 execute if score pink bb_blockscalc matches 9 run execute as @e[type=marker,tag=bb_pinkanchor] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 pink_concrete
 
