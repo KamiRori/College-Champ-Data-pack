@@ -1,0 +1,131 @@
+{
+    "providers": [
+    {
+        "type": "bitmap",
+        "file": "font:arrow-1.png",
+        "ascent": 50,
+        "height": 250,
+        "chars": ["\ue001"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:arrow-2.png",
+        "ascent": 50,
+        "height": 250,
+        "chars": ["\ue002"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:arrow-3.png",
+        "ascent": 50,
+        "height": 250,
+        "chars": ["\ue003"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:arrow-4.png",
+        "ascent": 50,
+        "height": 250,
+        "chars": ["\ue004"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:arrow-5.png",
+        "ascent": 50,
+        "height": 250,
+        "chars": ["\ue005"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:circle-false.png",
+        "ascent": 7,
+        "height": 8,
+        "chars": ["\ue006"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:circle-true.png",
+        "ascent": 7,
+        "height": 8,
+        "chars": ["\ue007"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:crown-false.png",
+        "ascent": 7,
+        "height": 8,
+        "chars": ["\ue008"]
+    },
+    {
+        "type": "bitmap",
+        "file": "font:crown-true.png",
+        "ascent": 7,
+        "height": 8,
+        "chars": ["\ue009"]
+    },
+    {
+        "type":"bitmap",
+        "file":"font:border.png",
+        "ascent":640,
+        "height":720,
+        "chars":["\ue010"]
+    },
+    {
+        "type":"bitmap",
+        "file":"font:black.png",
+        "ascent":960,
+        "height":1920,
+        "chars":["\ue011"]
+    },
+    {
+        "type":"bitmap",
+        "file":"font:white.png",
+        "ascent":960,
+        "height":1920,
+        "chars":["\ue012"]
+    },
+    {
+        "type":"bitmap",
+        "file":"minecraft:_font/beta/non_canon_bossbar.png",
+        "ascent":10,
+        "height":30,
+        "chars":["\ue013"]
+    },
+    {
+        "type":"bitmap",
+        "file":"minecraft:_font/remix.png",
+        "ascent":0,
+        "height":16,
+        "chars":["\ue014"] 
+    },
+    {
+        "type":"bitmap",
+        "file":"minecraft:_font/remix.png",
+        "ascent":8,
+        "height":8,
+        "chars":["\ue015"] 
+    },
+    {
+        "type":"bitmap",
+        "file":"font:hitw.png",
+        "ascent":8,
+        "height":8,
+        "chars":["\ue016"] 
+    },
+    {
+        "type":"bitmap",
+        "file":"font:kills.png",
+        "ascent":8,
+        "height":8,
+        "chars":["\ue017"] 
+    },
+    {
+        "type":"bitmap",
+        "file":"font:frozen_effect.png",
+        "ascent":185,
+        "height":360,
+        "chars":["\ue018"] 
+    }
+
+]
+}

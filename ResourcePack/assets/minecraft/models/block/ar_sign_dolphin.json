@@ -1,0 +1,28 @@
+{
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "parkour/dolphins_grace",
+		"1":"block/empty",
+		"particle": "parkour/dolphins_grace"
+	},
+	"elements": [
+		{
+			"from": [0, -8, 8],
+			"to": [16, 8, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 8], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 0], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"fixed":{
+		"rotation": [ 270, 90, 0 ],
+		"translation": [ 0, 0, -32],
+		"scale":[ 4, 4, 4]
+	  }}
+}

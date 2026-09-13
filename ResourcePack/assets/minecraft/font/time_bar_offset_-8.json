@@ -1,0 +1,70 @@
+{"providers":[
+    
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/0.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["0"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/1.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["1"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/2.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["2"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/3.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["3"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/4.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["4"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/5.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["5"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/6.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["6"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/7.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["7"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/8.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["8"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/9.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["9"]
+        },{
+            "type": "bitmap",
+            "file": "minecraft:_font/progress_short/10.png",
+            "ascent": -8,
+            "height": 1,
+            "chars": ["a"]
+        }
+]}

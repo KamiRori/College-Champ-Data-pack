@@ -1,0 +1,68 @@
+{
+  "variants": {
+    "instrument=custom_head,note=1,powered=false": {
+      "model": "block/decisiondome/parkourtag"
+    },
+    "instrument=custom_head,note=2,powered=false": {
+      "model": "block/decisiondome/battlebox"
+    },
+    "instrument=custom_head,note=3,powered=false": {
+      "model": "block/decisiondome/sot"
+    },
+    "instrument=custom_head,note=4,powered=false": {
+      "model": "block/decisiondome/parkourwarrior"
+    },
+    "instrument=custom_head,note=5,powered=false": {
+      "model": "block/decisiondome/hitw"
+    },
+    "instrument=custom_head,note=6,powered=false": {
+      "model": "block/decisiondome/buildmart"
+    },
+    "instrument=custom_head,note=7,powered=false": {
+      "model": "block/decisiondome/acerace"
+    },
+    "instrument=custom_head,note=8,powered=false": {
+      "model": "block/decisiondome/tgttos"
+    },
+    "instrument=custom_head,note=9,powered=false": {
+      "model": "block/decisiondome/rsr"
+    },
+    "instrument=custom_head,note=10,powered=false": {
+      "model": "block/decisiondome/dodgebolt"
+    },
+    "instrument=custom_head,note=11,powered=false": {
+      "model": "block/decisiondome/skybattle"
+    },
+    "instrument=custom_head,note=12,powered=false": {
+      "model": "block/decisiondome/gr"
+    },
+    "instrument=custom_head,note=13,powered=false": {
+      "model": "block/decisiondome/sg"
+    },
+    "instrument=custom_head,note=14,powered=false": {
+      "model": "block/decisiondome/meltdown"
+    },
+    "instrument=custom_head,note=15,powered=false": {
+      "model": "block/decisiondome/bbf"
+    },
+    "instrument=custom_head,note=16,powered=false": {
+      "model": "block/decisiondome/skyblockle"
+    },
+    "instrument=custom_head,note=17,powered=false": {
+      "model": "block/decisiondome/rrr"
+    },
+    
+    "instrument=custom_head,note=18,powered=false": {
+      "model": "block/decisiondome/moveroyale"
+    },
+    "instrument=custom_head,note=20,powered=false": {
+      "model": "block/decisiondome/ws"
+    },
+    "instrument=custom_head,note=23,powered=false": {
+      "model": "block/decisiondome/questionmark_glow"
+    },
+    "instrument=custom_head,note=24,powered=false": {
+      "model": "block/decisiondome/questionmark"
+    }
+  }
+}

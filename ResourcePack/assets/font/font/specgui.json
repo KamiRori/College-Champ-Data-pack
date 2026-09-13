@@ -1,0 +1,10 @@
+{
+    "providers": [
+    {
+        "type": "bitmap",
+        "file": "font:tick_small.png",
+        "ascent": 8,
+        "height": 8,
+        "chars": ["1"]
+    }]
+}

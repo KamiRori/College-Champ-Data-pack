@@ -1,0 +1,13 @@
+{
+  "gameMode.changed": "§1",
+  "soundCategory.music": "§c§lTURN THIS OFF!!!",
+  "soundCategory.record": "§eCore Music",
+  "soundCategory.voice": "§eGame Music",
+  "options.sounds.title": "§eGame Music§r are assets of §cNoxcrew™ MC Championship§r. Please turn off music if your content is for commercial use.",
+  "chat.type.text": "%s: %s",
+  "chat.type.team.text":"%s %s: %s",
+  "chat.type.team.sent":"%s %s: %s",
+  "multiplayer.player.joined": "§7[§a§l+§7]§r %s",
+  "multiplayer.player.joined.renamed": "§7[§a§l+§7]§r %s (formerly known as %s)",
+  "multiplayer.player.left": "§7[§c§l-§7]§r %s"
+}

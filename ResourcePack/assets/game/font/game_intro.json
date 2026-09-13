@@ -1,0 +1,25 @@
+{
+    "providers":[
+        {
+            "type":"bitmap",
+            "file":"game:game_intro/intro-bg-shrink.png",
+            "ascent": 640,
+            "height": 720,
+            "chars":["\ua001"]
+        },
+        {
+            "type":"bitmap",
+            "file":"game:game_intro/intro_progress/3-1.png",
+            "ascent": -60,
+            "height": 8,
+            "chars":["\ub031"]
+        },
+        {
+            "type":"bitmap",
+            "file":"game:game_intro/intro-bg-template.png",
+            "ascent": 0,
+            "height": 128,
+            "chars":["\uc001"]
+        }
+    ]
+}

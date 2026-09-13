@@ -1,0 +1,228 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/ui/warn_bg_48.png",
+            "ascent": 9,
+            "height": 12,
+            "chars": ["\uc048"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_48.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub048"]
+            },
+            {
+            "type": "bitmap",
+            "file": "minecraft:_font/ui/bg_64.png",
+            "ascent": 9,
+            "height": 12,
+            "chars": ["\ub064"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_96.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub096"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_128.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub128"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_160.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub160"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_192.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub192"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_240.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub240"]
+            },
+            {
+                "type": "bitmap",
+                "file": "minecraft:_font/ui/bg_255.png",
+                "ascent": 9,
+                "height": 12,
+                "chars": ["\ub255"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/elytra_durability.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua001"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/rocket_counter.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua002"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/1.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua011"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/2.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua012"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/3.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua013"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/4.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua014"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/5.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua015"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/6.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua016"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/7.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua017"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/8.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua018"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/cleanse/9.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua019"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_normal/1.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua021"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_normal/2.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua022"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_normal/3.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua023"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_normal/4.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua024"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_normal/5.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua025"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_normal/6.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua026"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_proc/1.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua031"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_proc/2.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua032"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_proc/3.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua033"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_proc/4.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua034"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_proc/5.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua035"]
+            },
+            {
+                "type":"bitmap",
+                "file":"minecraft:_font/rocket_spleef/struck_proc/6.png",
+                "ascent":17,
+                "height":21,
+                "chars":["\ua036"]
+            }
+    ]
+}

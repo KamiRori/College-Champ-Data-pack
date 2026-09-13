@@ -1,0 +1,16 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/ender_pearl"
+    },
+    "overrides":[
+        {
+            "predicate":{"custom_model_data":6006},
+                "model": "minecraft:item/updraft"
+        },
+        {
+            "predicate":{"custom_model_data":17001},
+                "model": "minecraft:item/rrr_minecart_caller"
+        }
+    ]
+  }

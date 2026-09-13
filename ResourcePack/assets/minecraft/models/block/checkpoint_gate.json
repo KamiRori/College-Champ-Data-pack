@@ -1,0 +1,28 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"0": "block/empty",
+		"1": "parkour/pillar_glow",
+		"particle": "block/texture"
+	},
+	"elements": [
+		{
+			"from": [0, -5, 7],
+			"to": [2, 5, 7],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 10], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 10], "texture": "#0"},
+				"up": {"uv": [2, 0, 0, 0], "texture": "#0"},
+				"down": {"uv": [2, 0, 0, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"fixed":{
+		"rotation": [ 270, 90, 0 ],
+		"translation": [ 0, 0, -32],
+		"scale":[ 4, 4, 4]
+	  }}
+}

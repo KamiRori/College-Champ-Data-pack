@@ -1,0 +1,32 @@
+{
+    "providers": [
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/warning/rsr_updraft/0.png",
+        "ascent": -28,
+        "height": 180,
+        "chars": ["0"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/warning/rsr_updraft/1.png",
+        "ascent": -28,
+        "height": 180,
+        "chars": ["1"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/warning/rsr_updraft/2.png",
+        "ascent": -28,
+        "height": 180,
+        "chars": ["2"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/warning/rsr_updraft/3.png",
+        "ascent": -28,
+        "height": 180,
+        "chars": ["3"]
+    }
+]
+}

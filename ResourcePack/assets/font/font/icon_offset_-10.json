@@ -1,0 +1,11 @@
+{
+    "providers":[
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/ui/meltdown_abar.png",
+            "ascent": -48,
+            "height": 180,
+            "chars": ["艚"]
+            }
+    ]
+}

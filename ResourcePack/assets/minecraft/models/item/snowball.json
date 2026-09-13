@@ -1,0 +1,66 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/snowball"
+    },
+    "overrides":[
+        {
+            "predicate":{"custom_model_data":9050},
+                "model": "minecraft:item/heart"
+        },
+        {
+            "predicate":{"custom_model_data":17001},
+                "model": "minecraft:item/ticket"
+        },
+        {
+            "predicate":{"custom_model_data":17002},
+                "model": "minecraft:item/exit"
+        },
+        {
+            "predicate":{"custom_model_data":11000001},
+                "model": "minecraft:item/fire_charge"
+        },
+        {
+            "predicate":{"custom_model_data":11000002},
+                "model": "minecraft:item/snowball"
+        },{
+            "predicate":{"custom_model_data":11000003},
+                "model": "decisiondome/tool/unoreverse"
+        },
+        {
+            "predicate":{"custom_model_data":11000004},
+                "model": "minecraft:item/snowball"
+        },{
+            "predicate":{"custom_model_data":11000005},
+                "model": "minecraft:item/slime_ball"
+        },
+        {
+            "predicate":{"custom_model_data":11000006},
+                "model": "minecraft:item/fox_spawn_egg"
+        },
+        {
+            "predicate":{"custom_model_data":11000007},
+                "model": "decisiondome/tool/hutao"
+        },
+        {
+            "predicate":{"custom_model_data":11000008},
+                "model": "decisiondome/tool/resetdome"
+              
+        },
+        {
+            "predicate":{"custom_model_data":11000009},
+                "model": "decisiondome/tool/zhonglishield"
+              
+        },
+        {
+            "predicate":{"custom_model_data":11000010},
+                "model": "decisiondome/tool/chicken_windfield"
+              
+        },
+        {
+            "predicate":{"custom_model_data":11000011},
+                "model": "decisiondome/tool/guardians_oath"
+              
+        }
+    ]
+  }

@@ -1,0 +1,65 @@
+{
+	"texture_size": [128, 128],
+	"textures": {
+		"2": "decisiondome/remix_anim",
+		"particle": "decisiondome/remix_anim"
+	},
+	"elements": [
+		{
+			"from": [0, 23.5, 0],
+			"to": [32, 29.55, 0],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2.91841], "texture": "#2"},
+				"east": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"south": {"uv": [0, 0, 4, 0.75625], "texture": "#missing"},
+				"west": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 4, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 23.5, 0],
+			"to": [0, 29.55, 32],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"east": {"uv": [0, 0, 4, 0.75625], "texture": "#missing"},
+				"south": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"west": {"uv": [0, 0, 16, 2.91841], "texture": "#2"},
+				"up": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 4], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 23.5, 32],
+			"to": [32, 29.55, 32],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 0.75625], "texture": "#missing"},
+				"east": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 2.91841], "texture": "#2"},
+				"west": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"up": {"uv": [0, 0, 4, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 4, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [32, 23.5, 0],
+			"to": [32, 29.55, 32],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 2.91841], "texture": "#2"},
+				"south": {"uv": [0, 0, 0, 0.75625], "texture": "#missing"},
+				"west": {"uv": [0, 0, 4, 0.75625], "texture": "#missing"},
+				"up": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 4], "texture": "#missing"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "remix_layer",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

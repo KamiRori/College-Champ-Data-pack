@@ -1,0 +1,39 @@
+{
+    "providers": [
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/pkw_main_0.png",
+        "ascent": 3,
+        "height": 8,
+        "chars": ["0"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/pkw_main_1.png",
+        "ascent": 2,
+        "height": 8,
+        "chars": ["1"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/pkw_main_2.png",
+        "ascent": 2,
+        "height": 8,
+        "chars": ["2"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/pkw_main_3.png",
+        "ascent": 2,
+        "height": 8,
+        "chars": ["3"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:_font/pkw_progress.png",
+        "ascent": 8,
+        "height": 20,
+        "chars": ["9"]
+    }
+]
+}

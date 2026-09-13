@@ -1,0 +1,356 @@
+{
+    "providers": [
+    {
+    "type": "bitmap",
+    "file": "minecraft:buildmart/manual.png",
+    "ascent": 160,
+    "height": 384,
+    "chars": ["\ue101"]
+    },
+    {
+        "type": "bitmap",
+        "file": "minecraft:pkw/pkwclock.png",
+        "ascent": 0,
+        "height": 12,
+        "chars": ["\ue201"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:decisiondome/10capacityelevator.png",
+            "ascent": 384,
+            "height": 384,
+            "chars": ["\ue301"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:decisiondome/15capacityelevator.png",
+            "ascent": 384,
+            "height": 384,
+            "chars": ["\ue302"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:decisiondome/20capacityelevator.png",
+            "ascent": 384,
+            "height": 384,
+            "chars": ["\ue303"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:decisiondome/25capacityelevator.png",
+            "ascent": 384,
+            "height": 384,
+            "chars": ["\ue304"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/empty.png",
+            "ascent": 32,
+            "height": 128,
+            "chars": ["鼜"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/team.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["愺"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/player.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["懆"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/player_inactive.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["遪"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:pkw/stone.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["茳"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:pkw/bronze.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["弶"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:pkw/silver.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["豇"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:pkw/gold.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["耩"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:ar/dolphins_grace.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䅂"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:ar/elytra.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䅄"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:ar/trident.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䅃"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:ar/up.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䅀"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:ar/down.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䅁"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/sot.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䄶"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/crown.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["䄝"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/railroadrush_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["褿"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/fates_plate.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["礤"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/battle_box_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["曺"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/parkour_tag_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["鄵"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/tgttos_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["囃"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/acerace_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["莤"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/railroadrush_tnt.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["礸"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/moveroyale.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["峟"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/sg_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["浟"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/rocket_spleef_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["牖"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/meltdown_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["嚘"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/hole_in_the_wall_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["輶"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/sky_battle_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["戭"]
+        },
+        
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/dodgebolt.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["逌"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/parkour_warrior.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["梎"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:game_icon/weapon_swap.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["尢"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:item/empty.png",
+            "ascent": 32,
+            "height": 64,
+            "chars": ["礸"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/skull_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["楒"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/tick_small.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["彀"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/warning_red.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["鼱"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/warning_yellow.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["獍"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/warning_blue.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["坕"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/warning_orange.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["瀞"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/meltdown/crate_unlocked.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["榮"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/meltdown/room_unlocked.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["栄"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/crystalized_time/empty.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["婌"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/crystalized_time/fail.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["毺"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/crystalized_time/bonus_empty.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["潻"]
+        },
+        {
+            "type": "bitmap",
+            "file": "minecraft:_font/crystalized_time/bonus_inactive.png",
+            "ascent": 7,
+            "height": 8,
+            "chars": ["潻"]
+        }
+        
+]
+}

@@ -1,0 +1,7 @@
+{"textures":{"layer0":"item/leather_horse_armor"},"parent":"item/generated","overrides":[
+    {
+      
+        "predicate":{"custom_model_data":3001},
+        "model":"minecraft:meltdown/heater_neutral"
+      }
+      ]}
